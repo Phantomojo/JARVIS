@@ -1,6 +1,6 @@
 import unittest
 from unittest.mock import patch, MagicMock
-import jarvis.scripts.cpu_optimizer as cpu_opt
+import cpu_optimizer as cpu_opt
 
 class TestJARVISCPUOptimizer(unittest.TestCase):
     def setUp(self):

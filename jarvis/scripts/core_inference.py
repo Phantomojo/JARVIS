@@ -9,9 +9,9 @@ from typing import Dict, Any
 
 import torch
 
-from jarvis.scripts.gpu_optimizer import JARVISGPUOptimizer
-from jarvis.scripts.cpu_optimizer import JARVISCPUOptimizer
-from jarvis.scripts.memory_manager import MemoryManager
+from gpu_optimizer import JARVISGPUOptimizer
+from cpu_optimizer import JARVISCPUOptimizer
+from memory_manager import MemoryManager
 
 class CoreInferenceManager:
     def __init__(self):

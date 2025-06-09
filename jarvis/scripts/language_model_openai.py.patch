@@ -1,0 +1,6 @@
+<<<<<<<
+        return response.choices[0].message['content'].strip()
+=======
+        content = response.choices[0].message.get('content')
+        return (content or "").strip()
+>>>>>>>

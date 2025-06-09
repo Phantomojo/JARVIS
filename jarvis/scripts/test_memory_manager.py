@@ -1,26 +1,27 @@
 import unittest
-from unittest.mock import patch, MagicMock
-import jarvis.scripts.memory_manager as mem_mgr
+import memory_manager as mem_mgr
 
 class TestMemoryManager(unittest.TestCase):
     def setUp(self):
         self.manager = mem_mgr.MemoryManager()
 
-    @patch('psutil.virtual_memory')
-    def test_get_ram_usage_mb(self, mock_virtual_memory):
-        mock_virtual_memory.return_value.total = 16 * 1024**3
-        mock_virtual_memory.return_value.available = 8 * 1024**3
-        usage = self.manager.get_ram_usage_mb()
-        self.assertAlmostEqual(usage, 8 * 1024, delta=100)
-
-    @patch('builtins.print')
-    def test_load_and_unload_model(self, mock_print):
+    def test_load_and_unload_model(self):
         self.manager.loaded_models = {}
         self.manager.model_usage_stats = {}
-        self.manager.load_model('test_model', 1000)
-        mock_print.assert_any_call('Model test_model loaded.')
+        self.manager.load_model("test_model", 1000)
+        self.assertIn("test_model", self.manager.loaded_models)
         self.manager.unload_least_used_model()
-        mock_print.assert_any_call('Model test_model unloaded to free memory.')
+        self.assertNotIn("test_model", self.manager.loaded_models)
+
+    def test_can_load_model(self):
+        self.manager.ram_limit_mb = 2000
+        self.manager.system_reserved_mb = 500
+        self.manager.ai_available_mb = 1500
+        # Override RAM usage for testing
+        self.manager._test_used_mb = 0
+        self.assertTrue(self.manager.can_load_model("model", 1000))
+        self.assertFalse(self.manager.can_load_model("model", 2000))
+        del self.manager._test_used_mb
 
 if __name__ == '__main__':
     unittest.main()

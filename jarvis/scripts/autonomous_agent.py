@@ -19,12 +19,26 @@ import os
 import sys
 import time
 import psutil
-import GPUtil
+try:
+    import GPUtil
+except ImportError:
+    GPUtil = None
 from typing import Dict, List, Any, Optional, Tuple, Union
 from dataclasses import dataclass
 from enum import Enum
 import requests
-import ollama
+try:
+    import ollama
+except ImportError:
+    ollama = None
+
+import types
+# Fix for missing 'jarvis' module import error in process_request
+if 'jarvis' not in sys.modules or sys.modules['jarvis'] is None:
+    # Create a package module with __path__ attribute to avoid 'not a package' error
+    jarvis_module = types.ModuleType('jarvis')
+    jarvis_module.__path__ = []
+    sys.modules['jarvis'] = jarvis_module
 
 # Configure logging
 logging.basicConfig(
@@ -86,6 +100,8 @@ class HardwareMonitor:
     def check_vram_usage(self) -> float:
         """Check current VRAM usage"""
         try:
+            if GPUtil is None:
+                return 0.0
             gpus = GPUtil.getGPUs()
             if gpus:
                 return gpus[0].memoryUsed / 1024  # Convert MB to GB
@@ -134,12 +150,16 @@ class JarvisAgent:
     """
     
     def __init__(self, ollama_host="localhost", ollama_port=11434):
+        if ollama is None:
+            raise ImportError("Ollama module is not installed or not found")
         self.ollama_client = ollama.Client(host=f"http://{ollama_host}:{ollama_port}")
         self.model_name = "deepseek-r1:8b"
         self.conversation_history = []
         self.hardware_monitor = HardwareMonitor()
         self.blackbox_controller = BlackboxController()
         self.safety_monitor = SafetyMonitor()
+        self.core_inference_manager = None
+        self.language_model = None
         
         # JARVIS system prompt optimized for the established architecture
         self.system_prompt = """You are JARVIS, an autonomous AI assistant. Your role is to:
@@ -193,6 +213,14 @@ For each request, respond in JSON format:
         logger.info(f"JARVIS processing request: {user_input}")
         
         try:
+            # Initialize core inference and language model if not already
+            if self.core_inference_manager is None:
+                from jarvis.scripts.core_inference import CoreInferenceManager
+                self.core_inference_manager = CoreInferenceManager()
+            if self.language_model is None:
+                from jarvis.scripts.language_model import LanguageModel
+                self.language_model = LanguageModel()
+            
             # Check system resources first
             safe, message = self.hardware_monitor.is_safe_to_proceed()
             if not safe:

@@ -1,7 +1,7 @@
 import unittest
 from unittest.mock import patch, MagicMock
 from pynvml import nvmlInit, nvmlDeviceGetMemoryInfo, nvmlDeviceGetUtilizationRates, nvmlDeviceGetTemperature, NVML_TEMPERATURE_GPU
-import jarvis.scripts.gpu_optimizer as gpu_opt
+import gpu_optimizer as gpu_opt
 
 class TestJARVISGPUOptimizer(unittest.TestCase):
     def setUp(self):
@@ -17,9 +17,9 @@ class TestJARVISGPUOptimizer(unittest.TestCase):
         self.assertIn('memory_used_gb', status)
         self.assertIn('gpu_utilization', status)
 
-    @patch('jarvis.scripts.gpu_optimizer.nvmlDeviceGetMemoryInfo')
-    @patch('jarvis.scripts.gpu_optimizer.nvmlDeviceGetUtilizationRates')
-    @patch('jarvis.scripts.gpu_optimizer.nvmlDeviceGetTemperature')
+    @patch('gpu_optimizer.nvmlDeviceGetMemoryInfo')
+    @patch('gpu_optimizer.nvmlDeviceGetUtilizationRates')
+    @patch('gpu_optimizer.nvmlDeviceGetTemperature')
     def test_get_gpu_status(self, mock_temp, mock_util, mock_mem):
         mock_mem.return_value.used = 2 * 1024**3
         mock_mem.return_value.free = 2 * 1024**3
@@ -32,14 +32,14 @@ class TestJARVISGPUOptimizer(unittest.TestCase):
         self.assertEqual(status['gpu_utilization'], 50)
         self.assertEqual(status['temperature_c'], 70)
 
-    @patch('jarvis.scripts.gpu_optimizer.nvmlDeviceGetTemperature')
+    @patch('gpu_optimizer.nvmlDeviceGetTemperature')
     def test_monitor_thermal_throttling(self, mock_temp):
         mock_temp.return_value = 85
         self.assertTrue(self.optimizer.monitor_thermal_throttling())
         mock_temp.return_value = 75
         self.assertFalse(self.optimizer.monitor_thermal_throttling())
 
-    @patch('jarvis.scripts.gpu_optimizer.JARVISGPUOptimizer.get_gpu_status')
+    @patch('gpu_optimizer.JARVISGPUOptimizer.get_gpu_status')
     def test_intelligent_model_swapping(self, mock_get_status):
         # Test swap required when VRAM low
         mock_get_status.return_value = {'memory_free_gb': 0.5}

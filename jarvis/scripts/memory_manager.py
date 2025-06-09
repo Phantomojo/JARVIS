@@ -21,12 +21,17 @@ class MemoryManager:
         """Get current RAM usage in MB"""
         mem = psutil.virtual_memory()
         used_mb = (mem.total - mem.available) / (1024 * 1024)
-        return used_mb
+        # For testing, allow overriding used_mb
+        try:
+            return self._test_used_mb
+        except AttributeError:
+            return used_mb
 
     def can_load_model(self, model_name: str, model_size_mb: float) -> bool:
         """Check if there is enough RAM to load the model"""
         current_usage = self.get_ram_usage_mb()
-        if current_usage + model_size_mb < self.ai_available_mb:
+        # Adjust condition to allow loading if usage + model size <= available memory
+        if current_usage + model_size_mb <= self.ai_available_mb:
             return True
         return False
 

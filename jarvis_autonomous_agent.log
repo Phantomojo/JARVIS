@@ -4,3 +4,13 @@
 2025-06-09 10:41:30,970 - JarvisAgent - INFO - JARVIS processing request: who are you?
 2025-06-09 10:41:32,087 - JarvisAgent - INFO - Creating execution plan with DeepSeek R1
 2025-06-09 10:41:33,199 - JarvisAgent - ERROR - Error creating execution plan: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-06-09 21:19:08,497 - JarvisAgent - INFO - JARVIS processing request: hello who are you?
+2025-06-09 21:19:08,501 - JarvisAgent - ERROR - Error processing request: No module named 'jarvis'
+2025-06-09 21:20:56,590 - JarvisAgent - INFO - JARVIS processing request: intro yourself
+2025-06-09 21:20:56,591 - JarvisAgent - ERROR - Error processing request: No module named 'jarvis'
+2025-06-09 21:23:19,531 - JarvisAgent - INFO - JARVIS processing request: hello
+2025-06-09 21:23:19,531 - JarvisAgent - ERROR - Error processing request: No module named 'jarvis'
+2025-06-09 21:24:29,650 - JarvisAgent - INFO - JARVIS processing request: hello
+2025-06-09 21:24:29,651 - JarvisAgent - ERROR - Error processing request: No module named 'jarvis.scripts'; 'jarvis' is not a package
+2025-06-09 21:25:41,219 - JarvisAgent - INFO - JARVIS processing request: hello
+2025-06-09 21:25:41,220 - JarvisAgent - ERROR - Error processing request: No module named 'jarvis.scripts'
