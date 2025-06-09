@@ -174,16 +174,20 @@ This repository contains comprehensive documentation and implementation guides f
 
 ## 📖 Getting Started
 
-### **FOR BLACKBOX AI: START HERE IMMEDIATELY**
+### **🚀 FOR BEGINNERS: START HERE FIRST**
 
-📋 **`BLACKBOX_AI_IMPLEMENTATION_PROMPT.md`** - **COMPLETE IMPLEMENTATION INSTRUCTIONS**
-- Comprehensive prompt with all context and requirements
-- Exact hardware specifications and optimization strategies  
-- Phase-by-phase implementation roadmap
-- Manual intervention protocols and safety requirements
-- Performance targets and success criteria
+📋 **`BEGINNER_SETUP_GUIDE.md`** - **COMPLETE BEGINNER-FRIENDLY SETUP**
+- Simple step-by-step instructions for cybersecurity students
+- No advanced technical knowledge required
+- 2-3 hour complete setup process
+- Includes AutoGPT integration and cybersecurity focus
 
-### **IMMEDIATE ACTION REQUIRED**
+📋 **`AUTOGPT_INTEGRATION_GUIDE.md`** - **ADD AUTONOMOUS AI CAPABILITIES**
+- Integrate AutoGPT for autonomous task execution
+- Cybersecurity-focused automation examples
+- Master controller for coordinating multiple AI systems
+
+### **⚠️ SYSTEM PREPARATION (DO THIS FIRST)**
 
 ⚠️ **FIRST:** `SYSTEM_READINESS_CHECKLIST.md` - **VERIFY ALL SYSTEMS BEFORE STARTING**
 - Ollama service and DeepSeek R1 model verification
@@ -192,11 +196,17 @@ This repository contains comprehensive documentation and implementation guides f
 - Python environment and AI framework verification
 - Performance baseline establishment
 
-1. **START WITH:** `BLACKBOX_AI_IMPLEMENTATION_PROMPT.md` - Complete instructions for immediate implementation
-2. **REFERENCE:** `hardware_specific_blackbox_instructions.md` - Critical configuration details
-3. **USE:** Hardware optimization strategies in `jarvis_local_deployment_guide.pdf`
-4. **FOLLOW:** 4-week timeline from deployment guide
-5. **COORDINATE:** AI collaboration frameworks for multi-AI coordination
+### **🔧 ADVANCED SETUP (FOR EXPERIENCED USERS)**
+
+📋 **`DEDICATED_DRIVE_SETUP_INSTRUCTIONS.md`** - **COMPLETE A: DRIVE SETUP**
+- Move everything including WSL2 to dedicated A: drive
+- Advanced performance optimization
+- Professional development environment setup
+
+📋 **`BLACKBOX_AI_IMPLEMENTATION_PROMPT.md`** - **FOR BLACKBOX AI IMPLEMENTATION**
+- Complete implementation instructions for Blackbox AI
+- Phase-by-phase implementation roadmap
+- Manual intervention protocols and safety requirements
 
 ### **For Human Implementers**
 
