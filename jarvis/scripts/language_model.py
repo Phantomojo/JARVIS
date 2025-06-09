@@ -17,16 +17,14 @@ class LanguageModel:
 
     def load_model(self):
         print(f"Loading quantized model {self.model_name} with 4-bit precision...")
+        # Adjusted to use load_in_4bit parameter directly without QuantizationConfig
         self.model = LlamaForCausalLM.from_pretrained(
             self.model_name,
             load_in_4bit=True,
             device_map="auto",
-            quantization_config=bnb.QuantizationConfig(
-                load_in_4bit=True,
-                bnb_4bit_use_double_quant=True,
-                bnb_4bit_quant_type="nf4",
-                bnb_4bit_compute_dtype=torch.float16
-            )
+            bnb_4bit_use_double_quant=True,
+            bnb_4bit_quant_type="nf4",
+            bnb_4bit_compute_dtype=torch.float16
         )
         self.model.to(self.device)
         print("Model loaded successfully.")

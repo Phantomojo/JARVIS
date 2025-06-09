@@ -1,0 +1,6 @@
+2025-06-09 10:41:21,171 - JarvisAgent - INFO - JARVIS processing request: hello
+2025-06-09 10:41:22,301 - JarvisAgent - INFO - Creating execution plan with DeepSeek R1
+2025-06-09 10:41:23,423 - JarvisAgent - ERROR - Error creating execution plan: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2025-06-09 10:41:30,970 - JarvisAgent - INFO - JARVIS processing request: who are you?
+2025-06-09 10:41:32,087 - JarvisAgent - INFO - Creating execution plan with DeepSeek R1
+2025-06-09 10:41:33,199 - JarvisAgent - ERROR - Error creating execution plan: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
