@@ -39,3 +39,6 @@
 [11:45:38] Extracted extension to file:///home/ubuntu/.local/share/code-server/extensions/eamodio.gitlens-17.1.1-universal: eamodio.gitlens
 [11:45:38] Renamed to /home/ubuntu/.local/share/code-server/extensions/eamodio.gitlens-17.1.1-universal
 [11:45:38] Extension installed successfully: eamodio.gitlens file:///home/ubuntu/.local/share/code-server/extensions/extensions.json
+[11:57:51] [10.228.149.1][352ad8a6][ManagementConnection] New connection established.
+[11:57:54] [10.228.149.1][40a17338][ExtensionHostConnection] New connection established.
+[11:57:54] [10.228.149.1][40a17338][ExtensionHostConnection] <20285> Launched Extension Host Process.

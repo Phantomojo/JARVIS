@@ -1,0 +1,4 @@
+2025-06-10 07:57:57.119 [info] Log level: Info
+2025-06-10 07:57:58.317 [warning] [GitHubBranchProtectionProvider][updateRepositoryBranchProtection] Failed to update repository branch protection: No GitHub authentication session available.
+2025-06-10 07:57:58.317 [warning] [GitHubBranchProtectionProvider][updateRepositoryBranchProtection] Failed to update repository branch protection: No GitHub authentication session available.
+2025-06-10 07:59:43.258 [warning] [GitHubSourceControlHistoryItemDetailsProvider][_loadAssignableUsers] Failed to load assignable user(s) for Phantomojo/JARVIS: Error: No GitHub authentication session available.
