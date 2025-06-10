@@ -1,0 +1,6 @@
+2025/06/07-16:52:16.552 267 Creating DB /home/ubuntu/.browser_data_dir/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb since it was missing.
+2025/06/07-16:52:16.556 267 Reusing MANIFEST /home/ubuntu/.browser_data_dir/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/MANIFEST-000001
+2025/06/07-16:52:34.942 1316 Level-0 table #5: started
+2025/06/07-16:52:34.943 1316 Level-0 table #5: 8759 bytes OK
+2025/06/07-16:52:34.943 1316 Delete type=0 #3
+2025/06/07-16:52:34.943 1316 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

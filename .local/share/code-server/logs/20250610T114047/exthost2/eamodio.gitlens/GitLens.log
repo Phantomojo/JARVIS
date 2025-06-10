@@ -1,0 +1,3 @@
+2025-06-10 07:57:57.635 [info] GitLens v17.1.1 activating in code-server (1.100.3) on the web; language='en', logLevel='warn', defaultDateLocale='null' (5ad162e2-27b2-4674-b37b-dd827bdb8384|fe926319-e84f-4a8c-b01c-e4890dad404e1749556671856)
+To enable debug logging, set `"gitlens.outputLevel": "debug"` or run "GitLens: Enable Debug Logging" from the Command Palette
+

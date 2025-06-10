@@ -1,0 +1,44 @@
+[2025-06-07T08:07:20.523Z] info  code-server 4.100.3 409c64e0df4d53530e59c16acc2b5d5766f717b0
+[2025-06-07T08:07:20.538Z] info  Using user-data-dir /home/ubuntu/.local/share/code-server
+[2025-06-07T08:07:20.553Z] info  Using config file /home/ubuntu/.config/code-server/config.yaml
+[2025-06-07T08:07:20.554Z] info  HTTP server listening on http://0.0.0.0:8329/
+[2025-06-07T08:07:20.554Z] info    - Authentication is enabled
+[2025-06-07T08:07:20.554Z] info      - Using password from /home/ubuntu/.config/code-server/config.yaml
+[2025-06-07T08:07:20.554Z] info    - Not serving HTTPS
+[2025-06-07T08:07:20.554Z] info  Session server listening on /home/ubuntu/.local/share/code-server/code-server-ipc.sock
+[11:40:47] 
+
+
+
+
+[11:40:48] Extension host agent started.
+[11:40:48] Started initializing default profile extensions in extensions installation folder. file:///home/ubuntu/.local/share/code-server/extensions
+[11:40:48] ComputeTargetPlatform: linux-x64
+[11:40:48] Completed initializing default profile extensions in extensions installation folder. file:///home/ubuntu/.local/share/code-server/extensions
+[11:40:54] [10.141.24.1][b256ebb1][ManagementConnection] New connection established.
+[11:40:58] [10.141.24.1][4a1acc4d][ExtensionHostConnection] New connection established.
+[11:40:59] [10.141.24.1][4a1acc4d][ExtensionHostConnection] <13139> Launched Extension Host Process.
+[11:41:40] ComputeTargetPlatform: linux-x64
+[11:45:35] Getting Manifest... eamodio.gitlens
+[11:45:36] Installing extension: eamodio.gitlens {
+  isMachineScoped: false,
+  installPreReleaseVersion: false,
+  pinned: false,
+  isApplicationScoped: false,
+  profileLocation: Or {
+    scheme: 'file',
+    authority: '',
+    path: '/home/ubuntu/.local/share/code-server/extensions/extensions.json',
+    query: '',
+    fragment: '',
+    _formatted: 'file:///home/ubuntu/.local/share/code-server/extensions/extensions.json',
+    _fsPath: '/home/ubuntu/.local/share/code-server/extensions/extensions.json'
+  },
+  productVersion: { version: '1.100.3', date: '2025-06-03T19:11:28.504Z' }
+}
+[11:45:38] Extracted extension to file:///home/ubuntu/.local/share/code-server/extensions/eamodio.gitlens-17.1.1-universal: eamodio.gitlens
+[11:45:38] Renamed to /home/ubuntu/.local/share/code-server/extensions/eamodio.gitlens-17.1.1-universal
+[11:45:38] Extension installed successfully: eamodio.gitlens file:///home/ubuntu/.local/share/code-server/extensions/extensions.json
+[11:57:51] [10.228.149.1][352ad8a6][ManagementConnection] New connection established.
+[11:57:54] [10.228.149.1][40a17338][ExtensionHostConnection] New connection established.
+[11:57:54] [10.228.149.1][40a17338][ExtensionHostConnection] <20285> Launched Extension Host Process.
