@@ -1,0 +1,20 @@
+{
+    "deepseek_model": "deepseek-r1:8b",
+    "ollama_host": "localhost",
+    "ollama_port": 11434,
+    "browser_automation": true,
+    "voice_control": false,
+    "autonomous_mode": true,
+    "safety_level": "supervised",
+    "hardware_optimization": {
+        "cpu_model": "i7-12700H",
+        "gpu_model": "RTX 3050 Ti",
+        "vram_limit_gb": 4.0,
+        "ram_limit_gb": 16.0,
+        "thermal_limit_celsius": 85
+    },
+    "logging": {
+        "level": "INFO",
+        "file": "jarvis_ultimate.log"
+    }
+}
