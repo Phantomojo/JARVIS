@@ -1,0 +1,3572 @@
+# Jarvis AI Assistant - Complete Requirements
+# Core dependencies for local autonomous AI agent with computer control
+
+# Core AI and ML
+requests>=2.31.0
+ollama>=0.1.7
+openai>=1.3.0
+anthropic>=0.7.0
+
+# System monitoring and control
+psutil>=5.9.0
+pyautogui>=0.9.54
+pynput>=1.7.6
+keyboard>=0.13.5
+mouse>=0.7.1
+
+# Image processing and computer vision
+pillow>=10.0.0
+opencv-python>=4.8.0
+numpy>=1.24.0
+scipy>=1.11.0
+matplotlib>=3.7.0
+
+# Voice recognition and synthesis
+SpeechRecognition>=3.10.0
+pyttsx3>=2.90
+pyaudio>=0.2.11
+wave>=0.0.2
+
+# GUI framework and utilities
+tkinter-tooltip>=2.0.0
+customtkinter>=5.2.0
+
+# File and data handling
+python-dotenv>=1.0.0
+configparser>=6.0.0
+pyyaml>=6.0.1
+toml>=0.10.2
+
+# Networking and web
+flask>=2.3.0
+fastapi>=0.104.0
+uvicorn>=0.24.0
+websockets>=11.0.3
+
+# Database (optional for chat history)
+sqlite3
+sqlalchemy>=2.0.0
+
+# Logging and monitoring
+loguru>=0.7.0
+rich>=13.6.0
+tqdm>=4.66.0
+
+# Development and testing
+black>=23.0.0
+flake8>=6.0.0
+pytest>=7.4.0
+pytest-cov>=4.1.0
+mypy>=1.6.0
+
+# Security and encryption
+cryptography>=41.0.0
+bcrypt>=4.0.0
+
+# Date and time handling
+python-dateutil>=2.8.2
+pytz>=2023.3
+
+# JSON and data serialization
+ujson>=5.8.0
+msgpack>=1.0.7
+
+# Process management
+supervisor>=4.2.5
+
+# Optional: Enhanced AI capabilities
+transformers>=4.35.0
+torch>=2.1.0
+sentence-transformers>=2.2.2
+
+# Optional: Web scraping (for enhanced research)
+beautifulsoup4>=4.12.0
+selenium>=4.15.0
+scrapy>=2.11.0
+
+# Optional: Document processing
+pypdf2>=3.0.1
+python-docx>=0.8.11
+openpyxl>=3.1.0
+
+# Optional: Email integration
+smtplib
+imaplib
+email-validator>=2.1.0
+
+# Optional: Calendar integration
+icalendar>=5.0.11
+google-api-python-client>=2.108.0
+
+# Optional: Weather and location services
+geocoder>=1.38.1
+timezonefinder>=6.2.0
+
+# Optional: Advanced system integration
+win32api; sys_platform == "win32"
+win32gui; sys_platform == "win32"
+win32con; sys_platform == "win32"
+pywin32; sys_platform == "win32"
+
+# Linux-specific packages
+python3-xlib; sys_platform == "linux"
+python3-dev; sys_platform == "linux"
+
+# Audio processing (advanced)
+librosa>=0.10.1
+soundfile>=0.12.1
+pyaudio-fork>=0.2.11
+
+# Machine learning utilities
+scikit-learn>=1.3.0
+pandas>=2.1.0
+
+# Async programming
+asyncio
+aiohttp>=3.9.0
+aiofiles>=23.2.1
+
+# Configuration management
+hydra-core>=1.3.0
+omegaconf>=2.3.0
+
+# Performance monitoring
+memory-profiler>=0.61.0
+line-profiler>=4.1.0
+
+# GUI enhancements
+tkinter-dnd2>=0.3.0
+tkinter-tooltip>=2.0.0
+
+# System tray integration
+pystray>=0.19.4
+
+# Clipboard operations
+pyperclip>=1.8.2
+
+# Screen recording (optional)
+python-mss>=9.0.1
+imageio>=2.31.0
+imageio-ffmpeg>=0.4.9
+
+# Natural language processing
+nltk>=3.8.1
+spacy>=3.7.0
+textblob>=0.17.1
+
+# Task scheduling
+schedule>=1.2.0
+apscheduler>=3.10.4
+
+# File watching
+watchdog>=3.0.0
+
+# System notifications
+plyer>=2.1.0
+notify2>=0.3.1
+
+# Performance optimization
+numba>=0.58.0
+cython>=3.0.0
+
+# Memory optimization
+pympler>=0.9
+objgraph>=3.6.0
+
+# Debugging tools
+pdb-clone>=1.10.6
+ipdb>=0.13.13
+
+# Code quality
+pre-commit>=3.5.0
+bandit>=1.7.5
+
+# Documentation
+sphinx>=7.2.0
+sphinx-rtd-theme>=1.3.0
+
+# Version control integration
+gitpython>=3.1.40
+
+# Environment management
+python-decouple>=3.8
+environs>=10.0.0
+
+# Caching
+diskcache>=5.6.3
+redis>=5.0.0
+
+# Message queuing (optional)
+celery>=5.3.0
+kombu>=5.3.0
+
+# Monitoring and alerting
+prometheus-client>=0.19.0
+grafana-api>=1.0.3
+
+# Cloud integration (optional)
+boto3>=1.29.0
+google-cloud-storage>=2.10.0
+azure-storage-blob>=12.19.0
+
+# API rate limiting
+ratelimit>=2.2.1
+slowapi>=0.1.9
+
+# Data validation
+pydantic>=2.5.0
+marshmallow>=3.20.0
+
+# HTTP client enhancements
+httpx>=0.25.0
+aiohttp>=3.9.0
+
+# Serialization
+pickle5>=0.0.12
+dill>=0.3.7
+
+# Compression
+lz4>=4.3.2
+zstandard>=0.22.0
+
+# Color and styling
+colorama>=0.4.6
+termcolor>=2.3.0
+
+# Progress bars
+alive-progress>=3.1.5
+progressbar2>=4.2.0
+
+# System information
+distro>=1.8.0
+platform>=1.0.8
+
+# Hardware monitoring
+gputil>=1.4.0
+nvidia-ml-py>=12.535.108
+
+# Network utilities
+netifaces>=0.11.0
+speedtest-cli>=2.1.3
+
+# File operations
+pathlib2>=2.3.7
+send2trash>=1.8.2
+
+# Backup and archiving
+tarfile
+zipfile
+shutil
+
+# Regular expressions
+regex>=2023.10.3
+
+# URL handling
+urllib3>=2.0.0
+validators>=0.22.0
+
+# Time and scheduling
+croniter>=1.4.1
+python-crontab>=3.0.0
+
+# Internationalization
+babel>=2.13.0
+gettext>=4.0
+
+# Template engines
+jinja2>=3.1.0
+mako>=1.3.0
+
+# Configuration file formats
+configobj>=5.0.8
+ruamel.yaml>=0.18.0
+
+# Command line interfaces
+click>=8.1.0
+argparse>=1.4.0
+typer>=0.9.0
+
+# Plugin systems
+pluggy>=1.3.0
+stevedore>=5.1.0
+
+# Event handling
+blinker>=1.7.0
+pyee>=11.0.0
+
+# State machines
+transitions>=0.9.0
+automaton>=3.0.1
+
+# Workflow management
+prefect>=2.14.0
+airflow>=2.7.0
+
+# Data structures
+sortedcontainers>=2.4.0
+bidict>=0.22.1
+
+# Functional programming
+toolz>=0.12.0
+funcy>=2.0
+
+# Retry mechanisms
+tenacity>=8.2.0
+backoff>=2.2.1
+
+# Profiling
+py-spy>=0.3.14
+scalene>=1.5.26
+
+# Memory debugging
+tracemalloc
+pympler>=0.9
+
+# System calls
+strace-python>=0.1.0
+
+# Process monitoring
+supervisor>=4.2.5
+circus>=0.18.0
+
+# Service discovery
+consul>=1.1.0
+etcd3>=0.12.0
+
+# Message brokers
+pika>=1.3.0
+kafka-python>=2.0.2
+
+# Distributed computing
+dask>=2023.10.0
+ray>=2.8.0
+
+# Graph databases
+neo4j>=5.13.0
+networkx>=3.2.0
+
+# Time series databases
+influxdb-client>=1.38.0
+prometheus-client>=0.19.0
+
+# Search engines
+elasticsearch>=8.11.0
+whoosh>=2.7.4
+
+# Machine learning pipelines
+mlflow>=2.8.0
+wandb>=0.16.0
+
+# Model serving
+bentoml>=1.1.0
+torchserve>=0.8.0
+
+# Computer vision
+mediapipe>=0.10.0
+face-recognition>=1.3.0
+
+# Audio processing
+librosa>=0.10.1
+pyaudio>=0.2.11
+
+# Natural language understanding
+rasa>=3.6.0
+dialogflow>=2.24.0
+
+# Knowledge graphs
+rdflib>=7.0.0
+owlrl>=6.0.2
+
+# Semantic search
+faiss-cpu>=1.7.4
+chromadb>=0.4.0
+
+# Vector databases
+pinecone-client>=2.2.4
+weaviate-client>=3.25.0
+
+# Embeddings
+sentence-transformers>=2.2.2
+openai-embeddings>=0.1.0
+
+# Text processing
+textstat>=0.7.3
+readability>=0.3.1
+
+# Language detection
+langdetect>=1.0.9
+polyglot>=16.7.4
+
+# Translation
+googletrans>=4.0.0
+deep-translator>=1.11.4
+
+# OCR (Optical Character Recognition)
+pytesseract>=0.3.10
+easyocr>=1.7.0
+
+# PDF processing
+pymupdf>=1.23.0
+pdfplumber>=0.10.0
+
+# Image generation
+diffusers>=0.24.0
+stability-sdk>=0.8.0
+
+# Video processing
+moviepy>=1.0.3
+ffmpeg-python>=0.2.0
+
+# 3D processing
+trimesh>=4.0.0
+open3d>=0.18.0
+
+# Robotics (optional)
+rospy>=1.16.0
+geometry-msgs>=0.6.0
+
+# IoT integration
+paho-mqtt>=1.6.0
+bleak>=0.21.0
+
+# Blockchain (optional)
+web3>=6.11.0
+eth-account>=0.9.0
+
+# Cryptocurrency (optional)
+ccxt>=4.1.0
+python-binance>=1.0.19
+
+# Social media APIs
+tweepy>=4.14.0
+facebook-sdk>=3.1.0
+
+# Communication platforms
+slack-sdk>=3.23.0
+discord.py>=2.3.0
+
+# Email services
+sendgrid>=6.10.0
+mailgun>=0.1.1
+
+# SMS services
+twilio>=8.10.0
+nexmo>=2.5.2
+
+# Cloud services
+google-cloud>=0.34.0
+azure-mgmt>=4.0.0
+
+# Container orchestration
+kubernetes>=28.1.0
+docker>=6.1.0
+
+# Infrastructure as code
+pulumi>=3.90.0
+terraform>=1.6.0
+
+# Monitoring and observability
+datadog>=0.47.0
+newrelic>=9.2.0
+
+# Error tracking
+sentry-sdk>=1.38.0
+rollbar>=0.16.3
+
+# Feature flags
+launchdarkly-server-sdk>=8.2.0
+flagsmith>=3.4.0
+
+# A/B testing
+optimizely-sdk>=4.1.0
+google-analytics>=0.1.0
+
+# User analytics
+mixpanel>=4.10.0
+amplitude-analytics>=1.1.0
+
+# Performance monitoring
+py-spy>=0.3.14
+austin-python>=1.6.0
+
+# Load testing
+locust>=2.17.0
+artillery>=2.0.0
+
+# Security scanning
+safety>=2.3.0
+bandit>=1.7.5
+
+# Dependency management
+pip-tools>=7.3.0
+poetry>=1.7.0
+
+# Virtual environments
+virtualenv>=20.24.0
+pipenv>=2023.10.0
+
+# Package building
+setuptools>=68.0.0
+wheel>=0.41.0
+build>=1.0.0
+
+# Documentation generation
+mkdocs>=1.5.0
+pdoc>=14.1.0
+
+# API documentation
+fastapi>=0.104.0
+swagger-ui-bundle>=0.1.2
+
+# Code formatting
+autopep8>=2.0.0
+yapf>=0.40.0
+
+# Import sorting
+isort>=5.12.0
+reorder-python-imports>=3.12.0
+
+# Type checking
+mypy>=1.6.0
+pyright>=1.1.0
+
+# Linting
+pylint>=3.0.0
+ruff>=0.1.0
+
+# Security linting
+semgrep>=1.45.0
+dlint>=0.14.0
+
+# Code complexity
+radon>=6.0.1
+xenon>=0.9.0
+
+# Code duplication
+vulture>=2.10
+duplicate-code-detection-tool>=0.1.0
+
+# Git hooks
+pre-commit>=3.5.0
+commitizen>=3.12.0
+
+# Release management
+bump2version>=1.0.1
+semantic-release>=8.5.0
+
+# Changelog generation
+gitchangelog>=3.0.4
+auto-changelog>=0.6.0
+
+# License checking
+licensecheck>=2023.1.1
+pip-licenses>=4.3.0
+
+# Vulnerability scanning
+pip-audit>=2.6.0
+cyclonedx-bom>=4.0.0
+
+# Code coverage
+coverage>=7.3.0
+pytest-cov>=4.1.0
+
+# Mutation testing
+mutmut>=2.4.3
+cosmic-ray>=8.3.0
+
+# Property-based testing
+hypothesis>=6.88.0
+faker>=19.12.0
+
+# Load testing
+pytest-benchmark>=4.0.0
+pytest-xdist>=3.3.0
+
+# Mock testing
+pytest-mock>=3.12.0
+responses>=0.23.0
+
+# Database testing
+pytest-postgresql>=5.0.0
+pytest-redis>=3.0.0
+
+# Web testing
+pytest-django>=4.7.0
+pytest-flask>=1.3.0
+
+# API testing
+tavern>=2.4.0
+dredd-hooks>=0.2.0
+
+# Visual testing
+pytest-html>=4.1.0
+allure-pytest>=2.13.0
+
+# Parallel testing
+pytest-parallel>=0.1.1
+pytest-forked>=1.6.0
+
+# Test data
+factory-boy>=3.3.0
+model-bakery>=1.17.0
+
+# Test fixtures
+pytest-fixtures>=0.1.0
+pytest-factoryboy>=2.5.0
+
+# Test utilities
+pytest-sugar>=0.9.7
+pytest-clarity>=1.0.1
+
+# Performance testing
+pytest-profiling>=1.7.0
+pytest-memray>=1.5.0
+
+# Integration testing
+testcontainers>=3.7.0
+docker-compose>=1.29.0
+
+# End-to-end testing
+playwright>=1.40.0
+selenium>=4.15.0
+
+# Mobile testing
+appium-python-client>=3.1.0
+robotframework>=6.1.0
+
+# Game development (optional)
+pygame>=2.5.0
+panda3d>=1.10.0
+
+# Scientific computing
+sympy>=1.12
+statsmodels>=0.14.0
+
+# Optimization
+cvxpy>=1.4.0
+pulp>=2.7.0
+
+# Quantum computing (optional)
+qiskit>=0.45.0
+cirq>=1.2.0
+
+# Bioinformatics (optional)
+biopython>=1.81
+pysam>=0.22.0
+
+# Geospatial analysis (optional)
+geopandas>=0.14.0
+folium>=0.15.0
+
+# Financial analysis (optional)
+yfinance>=0.2.0
+quantlib>=1.32
+
+# Educational tools (optional)
+jupyter>=1.0.0
+ipython>=8.17.0
+
+# Notebook extensions
+nbextensions>=0.1.0
+voila>=0.5.0
+
+# Data visualization
+plotly>=5.17.0
+bokeh>=3.3.0
+
+# Interactive widgets
+ipywidgets>=8.1.0
+bqplot>=0.12.0
+
+# Dashboard creation
+streamlit>=1.28.0
+dash>=2.14.0
+
+# Report generation
+reportlab>=4.0.0
+weasyprint>=60.0
+
+# Presentation tools
+reveal.js>=4.3.0
+rise>=5.7.0
+
+# Mind mapping
+graphviz>=0.20.0
+pygraphviz>=1.11
+
+# Workflow visualization
+mermaid>=0.1.0
+plantuml>=0.3.0
+
+# Data pipeline visualization
+airflow>=2.7.0
+dagster>=1.5.0
+
+# Model visualization
+tensorboard>=2.15.0
+netron>=7.2.0
+
+# Code visualization
+py2flowchart>=0.2.0
+code2flow>=2.5.0
+
+# System architecture
+diagrams>=0.23.0
+architecture>=0.1.0
+
+# Network analysis
+scapy>=2.5.0
+nmap>=0.1.0
+
+# Penetration testing (ethical use only)
+metasploit>=0.1.0
+burp-suite>=0.1.0
+
+# Forensics (educational)
+volatility3>=2.5.0
+autopsy>=0.1.0
+
+# Reverse engineering (educational)
+radare2>=5.8.0
+ghidra>=10.4.0
+
+# Malware analysis (educational)
+yara-python>=4.3.0
+pefile>=2023.2.7
+
+# Cryptography
+pycryptodome>=3.19.0
+cryptography>=41.0.0
+
+# Steganography
+stegano>=0.11.0
+pillow-steganography>=0.1.0
+
+# Password security
+passlib>=1.7.4
+argon2-cffi>=23.1.0
+
+# Two-factor authentication
+pyotp>=2.9.0
+qrcode>=7.4.0
+
+# Secure communication
+paramiko>=3.3.0
+fabric>=3.2.0
+
+# VPN integration
+openvpn>=0.1.0
+wireguard>=0.1.0
+
+# Proxy support
+pysocks>=1.7.1
+requests-socks>=0.1.0
+
+# Tor integration
+stem>=1.8.0
+torpy>=1.1.0
+
+# Privacy tools
+tails>=0.1.0
+whonix>=0.1.0
+
+# Anonymous communication
+onionshare>=2.6
+ricochet>=0.1.0
+
+# Secure file sharing
+magic-wormhole>=0.12.0
+croc>=0.1.0
+
+# Encrypted storage
+cryptomator>=0.1.0
+veracrypt>=0.1.0
+
+# Secure deletion
+shred>=0.1.0
+wipe>=0.1.0
+
+# Digital signatures
+gnupg>=2.3.0
+signify>=0.1.0
+
+# Certificate management
+certbot>=2.7.0
+acme>=2.7.0
+
+# SSL/TLS tools
+pyopenssl>=23.3.0
+certifi>=2023.7.0
+
+# Network security
+nftables>=0.1.0
+iptables>=0.1.0
+
+# Intrusion detection
+suricata>=0.1.0
+snort>=0.1.0
+
+# Log analysis
+logstash>=0.1.0
+elasticsearch>=8.11.0
+
+# SIEM integration
+splunk>=0.1.0
+qradar>=0.1.0
+
+# Threat intelligence
+misp>=0.1.0
+opencti>=0.1.0
+
+# Vulnerability management
+openvas>=0.1.0
+nessus>=0.1.0
+
+# Compliance tools
+nist>=0.1.0
+iso27001>=0.1.0
+
+# Risk assessment
+fair>=0.1.0
+octave>=0.1.0
+
+# Business continuity
+drp>=0.1.0
+bcp>=0.1.0
+
+# Incident response
+dfir>=0.1.0
+volatility>=0.1.0
+
+# Digital forensics
+sleuthkit>=0.1.0
+autopsy>=0.1.0
+
+# Memory analysis
+rekall>=0.1.0
+volatility3>=2.5.0
+
+# Network forensics
+wireshark>=0.1.0
+tcpdump>=0.1.0
+
+# Mobile forensics
+android-forensics>=0.1.0
+ios-forensics>=0.1.0
+
+# Cloud forensics
+aws-forensics>=0.1.0
+azure-forensics>=0.1.0
+
+# Blockchain forensics
+bitcoin-forensics>=0.1.0
+ethereum-forensics>=0.1.0
+
+# Social media forensics
+osint>=0.1.0
+maltego>=0.1.0
+
+# Email forensics
+email-forensics>=0.1.0
+pst-forensics>=0.1.0
+
+# File system forensics
+ext4-forensics>=0.1.0
+ntfs-forensics>=0.1.0
+
+# Database forensics
+mysql-forensics>=0.1.0
+postgresql-forensics>=0.1.0
+
+# Web application forensics
+burp-forensics>=0.1.0
+owasp-forensics>=0.1.0
+
+# Malware forensics
+cuckoo>=0.1.0
+virustotal>=0.1.0
+
+# Threat hunting
+yara>=4.3.0
+sigma>=0.1.0
+
+# Behavioral analysis
+cuckoo-sandbox>=0.1.0
+any-run>=0.1.0
+
+# Static analysis
+radare2>=5.8.0
+ida-pro>=0.1.0
+
+# Dynamic analysis
+ollydbg>=0.1.0
+x64dbg>=0.1.0
+
+# Reverse engineering
+ghidra>=10.4.0
+binary-ninja>=0.1.0
+
+# Exploit development (educational)
+metasploit>=0.1.0
+exploit-db>=0.1.0
+
+# Fuzzing
+afl>=0.1.0
+libfuzzer>=0.1.0
+
+# Code analysis
+sonarqube>=0.1.0
+checkmarx>=0.1.0
+
+# Dependency scanning
+snyk>=0.1.0
+whitesource>=0.1.0
+
+# Container security
+twistlock>=0.1.0
+aqua>=0.1.0
+
+# Kubernetes security
+falco>=0.1.0
+polaris>=0.1.0
+
+# Cloud security
+prowler>=0.1.0
+scout-suite>=0.1.0
+
+# Infrastructure security
+terraform-security>=0.1.0
+ansible-security>=0.1.0
+
+# DevSecOps
+jenkins-security>=0.1.0
+gitlab-security>=0.1.0
+
+# Security automation
+phantom>=0.1.0
+demisto>=0.1.0
+
+# Threat modeling
+threat-dragon>=0.1.0
+microsoft-threat-modeling>=0.1.0
+
+# Security training
+dvwa>=0.1.0
+webgoat>=0.1.0
+
+# Capture the flag
+picoctf>=0.1.0
+overthewire>=0.1.0
+
+# Bug bounty tools
+burp-suite>=0.1.0
+owasp-zap>=0.1.0
+
+# Red team tools
+cobalt-strike>=0.1.0
+empire>=0.1.0
+
+# Blue team tools
+elk-stack>=0.1.0
+splunk>=0.1.0
+
+# Purple team tools
+atomic-red-team>=0.1.0
+caldera>=0.1.0
+
+# Threat simulation
+mitre-attack>=0.1.0
+attack-navigator>=0.1.0
+
+# Security metrics
+security-scorecard>=0.1.0
+bitsight>=0.1.0
+
+# Compliance automation
+chef-inspec>=0.1.0
+ansible-compliance>=0.1.0
+
+# Security orchestration
+phantom>=0.1.0
+swimlane>=0.1.0
+
+# Identity management
+okta>=0.1.0
+auth0>=0.1.0
+
+# Privileged access
+cyberark>=0.1.0
+thycotic>=0.1.0
+
+# Zero trust
+zscaler>=0.1.0
+palo-alto>=0.1.0
+
+# Endpoint protection
+crowdstrike>=0.1.0
+sentinelone>=0.1.0
+
+# Network protection
+fortinet>=0.1.0
+checkpoint>=0.1.0
+
+# Cloud protection
+cloudflare>=0.1.0
+akamai>=0.1.0
+
+# Data protection
+varonis>=0.1.0
+forcepoint>=0.1.0
+
+# Email protection
+proofpoint>=0.1.0
+mimecast>=0.1.0
+
+# Web protection
+zscaler>=0.1.0
+menlo>=0.1.0
+
+# Mobile protection
+mobileiron>=0.1.0
+airwatch>=0.1.0
+
+# IoT protection
+armis>=0.1.0
+claroty>=0.1.0
+
+# OT protection
+dragos>=0.1.0
+nozomi>=0.1.0
+
+# Cloud workload protection
+twistlock>=0.1.0
+sysdig>=0.1.0
+
+# Serverless protection
+protego>=0.1.0
+puresec>=0.1.0
+
+# API protection
+salt>=0.1.0
+42crunch>=0.1.0
+
+# Database protection
+imperva>=0.1.0
+oracle-security>=0.1.0
+
+# Application protection
+contrast>=0.1.0
+veracode>=0.1.0
+
+# Code protection
+sonatype>=0.1.0
+blackduck>=0.1.0
+
+# Supply chain protection
+sonatype-nexus>=0.1.0
+jfrog-xray>=0.1.0
+
+# DevOps protection
+aqua-security>=0.1.0
+twistlock>=0.1.0
+
+# Container protection
+sysdig-secure>=0.1.0
+aqua-security>=0.1.0
+
+# Kubernetes protection
+stackrox>=0.1.0
+twistlock>=0.1.0
+
+# Serverless protection
+protego>=0.1.0
+puresec>=0.1.0
+
+# Microservices protection
+istio>=0.1.0
+linkerd>=0.1.0
+
+# Service mesh protection
+consul-connect>=0.1.0
+envoy>=0.1.0
+
+# API gateway protection
+kong>=0.1.0
+ambassador>=0.1.0
+
+# Load balancer protection
+nginx>=0.1.0
+haproxy>=0.1.0
+
+# CDN protection
+cloudflare>=0.1.0
+fastly>=0.1.0
+
+# DNS protection
+cloudflare-dns>=0.1.0
+quad9>=0.1.0
+
+# DDoS protection
+cloudflare-ddos>=0.1.0
+akamai-ddos>=0.1.0
+
+# WAF protection
+cloudflare-waf>=0.1.0
+aws-waf>=0.1.0
+
+# Bot protection
+cloudflare-bot>=0.1.0
+distil>=0.1.0
+
+# Fraud protection
+sift>=0.1.0
+kount>=0.1.0
+
+# Risk scoring
+fico>=0.1.0
+experian>=0.1.0
+
+# Credit monitoring
+credit-karma>=0.1.0
+credit-sesame>=0.1.0
+
+# Identity verification
+jumio>=0.1.0
+onfido>=0.1.0
+
+# Document verification
+trulioo>=0.1.0
+shufti-pro>=0.1.0
+
+# Biometric verification
+facetec>=0.1.0
+aware>=0.1.0
+
+# Voice verification
+nuance>=0.1.0
+speechmatics>=0.1.0
+
+# Behavioral biometrics
+behaviosec>=0.1.0
+biocatch>=0.1.0
+
+# Device fingerprinting
+iovation>=0.1.0
+threatmetrix>=0.1.0
+
+# Geolocation verification
+maxmind>=0.1.0
+ip2location>=0.1.0
+
+# Phone verification
+twilio-verify>=0.1.0
+telesign>=0.1.0
+
+# Email verification
+mailgun-verify>=0.1.0
+zerobounce>=0.1.0
+
+# Address verification
+smartystreets>=0.1.0
+loqate>=0.1.0
+
+# Age verification
+veratad>=0.1.0
+agechecker>=0.1.0
+
+# Income verification
+plaid>=0.1.0
+yodlee>=0.1.0
+
+# Employment verification
+workday>=0.1.0
+adp>=0.1.0
+
+# Education verification
+clearinghouse>=0.1.0
+credentials>=0.1.0
+
+# Background checks
+checkr>=0.1.0
+sterling>=0.1.0
+
+# Criminal checks
+lexisnexis>=0.1.0
+thomson-reuters>=0.1.0
+
+# Sanctions screening
+dow-jones>=0.1.0
+refinitiv>=0.1.0
+
+# PEP screening
+world-check>=0.1.0
+compliance>=0.1.0
+
+# AML screening
+actimize>=0.1.0
+fiserv>=0.1.0
+
+# KYC automation
+onfido>=0.1.0
+jumio>=0.1.0
+
+# Customer onboarding
+alloy>=0.1.0
+persona>=0.1.0
+
+# Digital identity
+civic>=0.1.0
+selfkey>=0.1.0
+
+# Decentralized identity
+sovrin>=0.1.0
+hyperledger-indy>=0.1.0
+
+# Blockchain identity
+uport>=0.1.0
+3box>=0.1.0
+
+# Self-sovereign identity
+evernym>=0.1.0
+microsoft-ion>=0.1.0
+
+# Verifiable credentials
+w3c-vc>=0.1.0
+hyperledger-aries>=0.1.0
+
+# Digital wallets
+metamask>=0.1.0
+trust-wallet>=0.1.0
+
+# Cryptocurrency
+bitcoin>=0.1.0
+ethereum>=0.1.0
+
+# DeFi protocols
+uniswap>=0.1.0
+compound>=0.1.0
+
+# NFT platforms
+opensea>=0.1.0
+rarible>=0.1.0
+
+# Gaming platforms
+unity>=0.1.0
+unreal>=0.1.0
+
+# VR/AR platforms
+oculus>=0.1.0
+hololens>=0.1.0
+
+# Metaverse platforms
+horizon>=0.1.0
+roblox>=0.1.0
+
+# Social platforms
+discord>=0.1.0
+telegram>=0.1.0
+
+# Content platforms
+youtube>=0.1.0
+tiktok>=0.1.0
+
+# Streaming platforms
+twitch>=0.1.0
+netflix>=0.1.0
+
+# Music platforms
+spotify>=0.1.0
+apple-music>=0.1.0
+
+# Podcast platforms
+anchor>=0.1.0
+spotify-podcasts>=0.1.0
+
+# News platforms
+reddit>=0.1.0
+twitter>=0.1.0
+
+# Professional platforms
+linkedin>=0.1.0
+github>=0.1.0
+
+# Learning platforms
+coursera>=0.1.0
+udemy>=0.1.0
+
+# Collaboration platforms
+slack>=0.1.0
+microsoft-teams>=0.1.0
+
+# Project management
+jira>=0.1.0
+asana>=0.1.0
+
+# Documentation platforms
+notion>=0.1.0
+confluence>=0.1.0
+
+# Design platforms
+figma>=0.1.0
+sketch>=0.1.0
+
+# Development platforms
+github>=0.1.0
+gitlab>=0.1.0
+
+# Cloud platforms
+aws>=0.1.0
+azure>=0.1.0
+
+# Container platforms
+docker>=0.1.0
+kubernetes>=0.1.0
+
+# Serverless platforms
+aws-lambda>=0.1.0
+azure-functions>=0.1.0
+
+# Edge computing
+cloudflare-workers>=0.1.0
+fastly-compute>=0.1.0
+
+# IoT platforms
+aws-iot>=0.1.0
+azure-iot>=0.1.0
+
+# AI platforms
+openai>=0.1.0
+anthropic>=0.1.0
+
+# ML platforms
+tensorflow>=0.1.0
+pytorch>=0.1.0
+
+# Data platforms
+snowflake>=0.1.0
+databricks>=0.1.0
+
+# Analytics platforms
+google-analytics>=0.1.0
+adobe-analytics>=0.1.0
+
+# Marketing platforms
+hubspot>=0.1.0
+salesforce>=0.1.0
+
+# E-commerce platforms
+shopify>=0.1.0
+magento>=0.1.0
+
+# Payment platforms
+stripe>=0.1.0
+paypal>=0.1.0
+
+# Banking platforms
+plaid>=0.1.0
+yodlee>=0.1.0
+
+# Insurance platforms
+lemonade>=0.1.0
+root>=0.1.0
+
+# Healthcare platforms
+epic>=0.1.0
+cerner>=0.1.0
+
+# Education platforms
+canvas>=0.1.0
+blackboard>=0.1.0
+
+# Government platforms
+usa-gov>=0.1.0
+gov-uk>=0.1.0
+
+# Legal platforms
+westlaw>=0.1.0
+lexisnexis>=0.1.0
+
+# Real estate platforms
+zillow>=0.1.0
+redfin>=0.1.0
+
+# Transportation platforms
+uber>=0.1.0
+lyft>=0.1.0
+
+# Delivery platforms
+doordash>=0.1.0
+ubereats>=0.1.0
+
+# Travel platforms
+expedia>=0.1.0
+booking>=0.1.0
+
+# Hospitality platforms
+airbnb>=0.1.0
+vrbo>=0.1.0
+
+# Entertainment platforms
+disney>=0.1.0
+warner>=0.1.0
+
+# Sports platforms
+espn>=0.1.0
+nfl>=0.1.0
+
+# Weather platforms
+weather-channel>=0.1.0
+accuweather>=0.1.0
+
+# News platforms
+cnn>=0.1.0
+bbc>=0.1.0
+
+# Financial platforms
+bloomberg>=0.1.0
+reuters>=0.1.0
+
+# Technology platforms
+techcrunch>=0.1.0
+wired>=0.1.0
+
+# Science platforms
+nature>=0.1.0
+science>=0.1.0
+
+# Medical platforms
+pubmed>=0.1.0
+webmd>=0.1.0
+
+# Research platforms
+arxiv>=0.1.0
+researchgate>=0.1.0
+
+# Academic platforms
+jstor>=0.1.0
+springer>=0.1.0
+
+# Library platforms
+worldcat>=0.1.0
+google-books>=0.1.0
+
+# Archive platforms
+archive-org>=0.1.0
+wayback>=0.1.0
+
+# Museum platforms
+smithsonian>=0.1.0
+met-museum>=0.1.0
+
+# Art platforms
+artsy>=0.1.0
+saatchi>=0.1.0
+
+# Photography platforms
+flickr>=0.1.0
+500px>=0.1.0
+
+# Video platforms
+vimeo>=0.1.0
+dailymotion>=0.1.0
+
+# Audio platforms
+soundcloud>=0.1.0
+bandcamp>=0.1.0
+
+# Podcast platforms
+apple-podcasts>=0.1.0
+google-podcasts>=0.1.0
+
+# Radio platforms
+iheartradio>=0.1.0
+pandora>=0.1.0
+
+# TV platforms
+hulu>=0.1.0
+amazon-prime>=0.1.0
+
+# Movie platforms
+imdb>=0.1.0
+rotten-tomatoes>=0.1.0
+
+# Book platforms
+goodreads>=0.1.0
+amazon-books>=0.1.0
+
+# Magazine platforms
+medium>=0.1.0
+substack>=0.1.0
+
+# Blog platforms
+wordpress>=0.1.0
+blogger>=0.1.0
+
+# Forum platforms
+discourse>=0.1.0
+phpbb>=0.1.0
+
+# Q&A platforms
+stackoverflow>=0.1.0
+quora>=0.1.0
+
+# Wiki platforms
+wikipedia>=0.1.0
+fandom>=0.1.0
+
+# Translation platforms
+google-translate>=0.1.0
+deepl>=0.1.0
+
+# Language platforms
+duolingo>=0.1.0
+babbel>=0.1.0
+
+# Coding platforms
+codecademy>=0.1.0
+freecodecamp>=0.1.0
+
+# Challenge platforms
+hackerrank>=0.1.0
+leetcode>=0.1.0
+
+# Competition platforms
+kaggle>=0.1.0
+topcoder>=0.1.0
+
+# Freelance platforms
+upwork>=0.1.0
+fiverr>=0.1.0
+
+# Job platforms
+indeed>=0.1.0
+glassdoor>=0.1.0
+
+# Networking platforms
+meetup>=0.1.0
+eventbrite>=0.1.0
+
+# Dating platforms
+tinder>=0.1.0
+bumble>=0.1.0
+
+# Family platforms
+ancestry>=0.1.0
+familysearch>=0.1.0
+
+# Pet platforms
+rover>=0.1.0
+wag>=0.1.0
+
+# Home platforms
+zillow>=0.1.0
+trulia>=0.1.0
+
+# Garden platforms
+gardenista>=0.1.0
+bhg>=0.1.0
+
+# Cooking platforms
+allrecipes>=0.1.0
+food-network>=0.1.0
+
+# Fitness platforms
+myfitnesspal>=0.1.0
+strava>=0.1.0
+
+# Health platforms
+webmd>=0.1.0
+healthline>=0.1.0
+
+# Mental health platforms
+betterhelp>=0.1.0
+talkspace>=0.1.0
+
+# Meditation platforms
+headspace>=0.1.0
+calm>=0.1.0
+
+# Sleep platforms
+sleep-cycle>=0.1.0
+pillow>=0.1.0
+
+# Nutrition platforms
+cronometer>=0.1.0
+myplate>=0.1.0
+
+# Weight platforms
+weight-watchers>=0.1.0
+noom>=0.1.0
+
+# Exercise platforms
+peloton>=0.1.0
+nike-training>=0.1.0
+
+# Yoga platforms
+down-dog>=0.1.0
+daily-yoga>=0.1.0
+
+# Running platforms
+runkeeper>=0.1.0
+nike-run>=0.1.0
+
+# Cycling platforms
+strava>=0.1.0
+zwift>=0.1.0
+
+# Swimming platforms
+myswimpro>=0.1.0
+speedo>=0.1.0
+
+# Hiking platforms
+alltrails>=0.1.0
+hiking-project>=0.1.0
+
+# Climbing platforms
+mountain-project>=0.1.0
+8a>=0.1.0
+
+# Skiing platforms
+onthesnow>=0.1.0
+ski-tracks>=0.1.0
+
+# Surfing platforms
+surfline>=0.1.0
+magicseaweed>=0.1.0
+
+# Fishing platforms
+fishbrain>=0.1.0
+anglr>=0.1.0
+
+# Hunting platforms
+onx-hunt>=0.1.0
+huntstand>=0.1.0
+
+# Camping platforms
+campendium>=0.1.0
+recreation-gov>=0.1.0
+
+# RV platforms
+campendium>=0.1.0
+rvlife>=0.1.0
+
+# Boating platforms
+boatsetter>=0.1.0
+getmyboat>=0.1.0
+
+# Aviation platforms
+foreflight>=0.1.0
+garmin-pilot>=0.1.0
+
+# Automotive platforms
+autotrader>=0.1.0
+cars>=0.1.0
+
+# Motorcycle platforms
+cycle-trader>=0.1.0
+revzilla>=0.1.0
+
+# Truck platforms
+commercial-truck-trader>=0.1.0
+trucking>=0.1.0
+
+# Bus platforms
+greyhound>=0.1.0
+megabus>=0.1.0
+
+# Train platforms
+amtrak>=0.1.0
+trainline>=0.1.0
+
+# Subway platforms
+citymapper>=0.1.0
+transit>=0.1.0
+
+# Taxi platforms
+uber>=0.1.0
+lyft>=0.1.0
+
+# Rideshare platforms
+blablacar>=0.1.0
+carpoolworld>=0.1.0
+
+# Scooter platforms
+lime>=0.1.0
+bird>=0.1.0
+
+# Bike platforms
+citibike>=0.1.0
+divvy>=0.1.0
+
+# Walking platforms
+walkscore>=0.1.0
+walkonomics>=0.1.0
+
+# Public transit platforms
+google-maps>=0.1.0
+apple-maps>=0.1.0
+
+# Navigation platforms
+waze>=0.1.0
+here>=0.1.0
+
+# Traffic platforms
+inrix>=0.1.0
+tomtom>=0.1.0
+
+# Parking platforms
+parkwhiz>=0.1.0
+spothero>=0.1.0
+
+# Gas platforms
+gasbuddy>=0.1.0
+waze>=0.1.0
+
+# EV platforms
+plugshare>=0.1.0
+chargepoint>=0.1.0
+
+# Maintenance platforms
+carfax>=0.1.0
+autozone>=0.1.0
+
+# Insurance platforms
+progressive>=0.1.0
+geico>=0.1.0
+
+# Finance platforms
+mint>=0.1.0
+personal-capital>=0.1.0
+
+# Investment platforms
+robinhood>=0.1.0
+etrade>=0.1.0
+
+# Retirement platforms
+fidelity>=0.1.0
+vanguard>=0.1.0
+
+# Tax platforms
+turbotax>=0.1.0
+hrblock>=0.1.0
+
+# Credit platforms
+credit-karma>=0.1.0
+credit-sesame>=0.1.0
+
+# Loan platforms
+lending-tree>=0.1.0
+rocket-mortgage>=0.1.0
+
+# Mortgage platforms
+quicken-loans>=0.1.0
+better>=0.1.0
+
+# Refinance platforms
+credible>=0.1.0
+lenderfi>=0.1.0
+
+# Student loan platforms
+navient>=0.1.0
+great-lakes>=0.1.0
+
+# Personal loan platforms
+sofi>=0.1.0
+marcus>=0.1.0
+
+# Business loan platforms
+kabbage>=0.1.0
+ondeck>=0.1.0
+
+# Credit card platforms
+credit-cards>=0.1.0
+nerdwallet>=0.1.0
+
+# Debit card platforms
+chime>=0.1.0
+simple>=0.1.0
+
+# Prepaid card platforms
+green-dot>=0.1.0
+netspend>=0.1.0
+
+# Gift card platforms
+raise>=0.1.0
+cardcash>=0.1.0
+
+# Rewards platforms
+rakuten>=0.1.0
+honey>=0.1.0
+
+# Cashback platforms
+ibotta>=0.1.0
+checkout51>=0.1.0
+
+# Coupon platforms
+groupon>=0.1.0
+retailmenot>=0.1.0
+
+# Deal platforms
+slickdeals>=0.1.0
+dealnews>=0.1.0
+
+# Price comparison platforms
+google-shopping>=0.1.0
+shopping>=0.1.0
+
+# Product review platforms
+amazon-reviews>=0.1.0
+yelp>=0.1.0
+
+# Service review platforms
+angie>=0.1.0
+thumbtack>=0.1.0
+
+# Restaurant review platforms
+yelp>=0.1.0
+zomato>=0.1.0
+
+# Hotel review platforms
+tripadvisor>=0.1.0
+booking>=0.1.0
+
+# Travel review platforms
+lonely-planet>=0.1.0
+frommers>=0.1.0
+
+# Activity platforms
+viator>=0.1.0
+getyourguide>=0.1.0
+
+# Event platforms
+eventbrite>=0.1.0
+meetup>=0.1.0
+
+# Ticket platforms
+ticketmaster>=0.1.0
+stubhub>=0.1.0
+
+# Concert platforms
+songkick>=0.1.0
+bandsintown>=0.1.0
+
+# Theater platforms
+broadway>=0.1.0
+telecharge>=0.1.0
+
+# Movie platforms
+fandango>=0.1.0
+atom-tickets>=0.1.0
+
+# Sports platforms
+ticketmaster>=0.1.0
+seatgeek>=0.1.0
+
+# Festival platforms
+festival-finder>=0.1.0
+songkick>=0.1.0
+
+# Conference platforms
+eventbrite>=0.1.0
+cvent>=0.1.0
+
+# Trade show platforms
+10times>=0.1.0
+eventseye>=0.1.0
+
+# Webinar platforms
+zoom>=0.1.0
+webex>=0.1.0
+
+# Virtual event platforms
+hopin>=0.1.0
+remo>=0.1.0
+
+# Livestream platforms
+twitch>=0.1.0
+youtube-live>=0.1.0
+
+# Podcast platforms
+spotify>=0.1.0
+apple-podcasts>=0.1.0
+
+# Audiobook platforms
+audible>=0.1.0
+libro>=0.1.0
+
+# E-book platforms
+kindle>=0.1.0
+kobo>=0.1.0
+
+# Magazine platforms
+apple-news>=0.1.0
+flipboard>=0.1.0
+
+# Newspaper platforms
+nytimes>=0.1.0
+wsj>=0.1.0
+
+# Newsletter platforms
+substack>=0.1.0
+mailchimp>=0.1.0
+
+# RSS platforms
+feedly>=0.1.0
+inoreader>=0.1.0
+
+# Bookmark platforms
+pocket>=0.1.0
+instapaper>=0.1.0
+
+# Note platforms
+evernote>=0.1.0
+onenote>=0.1.0
+
+# Task platforms
+todoist>=0.1.0
+any-do>=0.1.0
+
+# Calendar platforms
+google-calendar>=0.1.0
+outlook>=0.1.0
+
+# Email platforms
+gmail>=0.1.0
+outlook>=0.1.0
+
+# Chat platforms
+whatsapp>=0.1.0
+telegram>=0.1.0
+
+# Video call platforms
+zoom>=0.1.0
+skype>=0.1.0
+
+# Voice call platforms
+google-voice>=0.1.0
+skype>=0.1.0
+
+# SMS platforms
+google-messages>=0.1.0
+imessage>=0.1.0
+
+# File sharing platforms
+dropbox>=0.1.0
+google-drive>=0.1.0
+
+# Cloud storage platforms
+icloud>=0.1.0
+onedrive>=0.1.0
+
+# Backup platforms
+carbonite>=0.1.0
+backblaze>=0.1.0
+
+# Sync platforms
+sync>=0.1.0
+pcloud>=0.1.0
+
+# Transfer platforms
+wetransfer>=0.1.0
+send-anywhere>=0.1.0
+
+# Compression platforms
+winrar>=0.1.0
+7zip>=0.1.0
+
+# Encryption platforms
+veracrypt>=0.1.0
+axcrypt>=0.1.0
+
+# VPN platforms
+nordvpn>=0.1.0
+expressvpn>=0.1.0
+
+# Proxy platforms
+proxify>=0.1.0
+hideme>=0.1.0
+
+# Tor platforms
+tor-browser>=0.1.0
+orbot>=0.1.0
+
+# Anonymous platforms
+tails>=0.1.0
+whonix>=0.1.0
+
+# Privacy platforms
+duckduckgo>=0.1.0
+startpage>=0.1.0
+
+# Security platforms
+lastpass>=0.1.0
+1password>=0.1.0
+
+# Antivirus platforms
+norton>=0.1.0
+mcafee>=0.1.0
+
+# Firewall platforms
+zonealarm>=0.1.0
+comodo>=0.1.0
+
+# Anti-malware platforms
+malwarebytes>=0.1.0
+spybot>=0.1.0
+
+# System optimization platforms
+ccleaner>=0.1.0
+advanced-systemcare>=0.1.0
+
+# Driver platforms
+driver-booster>=0.1.0
+snappy-driver>=0.1.0
+
+# Registry platforms
+registry-cleaner>=0.1.0
+wise-registry>=0.1.0
+
+# Disk platforms
+disk-cleanup>=0.1.0
+disk-defrag>=0.1.0
+
+# Memory platforms
+memory-cleaner>=0.1.0
+ram-booster>=0.1.0
+
+# CPU platforms
+cpu-z>=0.1.0
+core-temp>=0.1.0
+
+# GPU platforms
+gpu-z>=0.1.0
+msi-afterburner>=0.1.0
+
+# Motherboard platforms
+cpu-z>=0.1.0
+hwinfo>=0.1.0
+
+# BIOS platforms
+bios-update>=0.1.0
+uefi>=0.1.0
+
+# Firmware platforms
+firmware-update>=0.1.0
+driver-update>=0.1.0
+
+# Hardware platforms
+hardware-monitor>=0.1.0
+system-info>=0.1.0
+
+# Benchmark platforms
+3dmark>=0.1.0
+cinebench>=0.1.0
+
+# Stress test platforms
+prime95>=0.1.0
+furmark>=0.1.0
+
+# Temperature platforms
+hwmonitor>=0.1.0
+open-hardware>=0.1.0
+
+# Fan control platforms
+speedfan>=0.1.0
+fan-control>=0.1.0
+
+# Overclocking platforms
+msi-afterburner>=0.1.0
+evga-precision>=0.1.0
+
+# Undervolting platforms
+throttlestop>=0.1.0
+intel-xtu>=0.1.0
+
+# Power management platforms
+powertop>=0.1.0
+battery-bar>=0.1.0
+
+# Display platforms
+displayfusion>=0.1.0
+ultramon>=0.1.0
+
+# Audio platforms
+equalizer-apo>=0.1.0
+voicemeeter>=0.1.0
+
+# Video platforms
+obs-studio>=0.1.0
+bandicam>=0.1.0
+
+# Streaming platforms
+streamlabs>=0.1.0
+xsplit>=0.1.0
+
+# Recording platforms
+fraps>=0.1.0
+shadowplay>=0.1.0
+
+# Screenshot platforms
+lightshot>=0.1.0
+greenshot>=0.1.0
+
+# Screen capture platforms
+snagit>=0.1.0
+camtasia>=0.1.0
+
+# Remote desktop platforms
+teamviewer>=0.1.0
+anydesk>=0.1.0
+
+# Virtual machine platforms
+virtualbox>=0.1.0
+vmware>=0.1.0
+
+# Container platforms
+docker-desktop>=0.1.0
+podman>=0.1.0
+
+# Development platforms
+visual-studio>=0.1.0
+intellij>=0.1.0
+
+# Code editor platforms
+vscode>=0.1.0
+sublime>=0.1.0
+
+# Terminal platforms
+windows-terminal>=0.1.0
+iterm2>=0.1.0
+
+# Shell platforms
+powershell>=0.1.0
+bash>=0.1.0
+
+# Package manager platforms
+chocolatey>=0.1.0
+homebrew>=0.1.0
+
+# Version control platforms
+git>=0.1.0
+svn>=0.1.0
+
+# Database platforms
+mysql>=0.1.0
+postgresql>=0.1.0
+
+# Web server platforms
+apache>=0.1.0
+nginx>=0.1.0
+
+# Application server platforms
+tomcat>=0.1.0
+jetty>=0.1.0
+
+# Message queue platforms
+rabbitmq>=0.1.0
+apache-kafka>=0.1.0
+
+# Cache platforms
+redis>=0.1.0
+memcached>=0.1.0
+
+# Search platforms
+elasticsearch>=0.1.0
+solr>=0.1.0
+
+# Monitoring platforms
+prometheus>=0.1.0
+grafana>=0.1.0
+
+# Logging platforms
+logstash>=0.1.0
+fluentd>=0.1.0
+
+# Tracing platforms
+jaeger>=0.1.0
+zipkin>=0.1.0
+
+# APM platforms
+new-relic>=0.1.0
+datadog>=0.1.0
+
+# Error tracking platforms
+sentry>=0.1.0
+rollbar>=0.1.0
+
+# Uptime monitoring platforms
+pingdom>=0.1.0
+uptime-robot>=0.1.0
+
+# Load testing platforms
+jmeter>=0.1.0
+gatling>=0.1.0
+
+# Security testing platforms
+owasp-zap>=0.1.0
+burp-suite>=0.1.0
+
+# API testing platforms
+postman>=0.1.0
+insomnia>=0.1.0
+
+# UI testing platforms
+selenium>=0.1.0
+cypress>=0.1.0
+
+# Mobile testing platforms
+appium>=0.1.0
+espresso>=0.1.0
+
+# Game testing platforms
+unity-test>=0.1.0
+unreal-test>=0.1.0
+
+# Performance testing platforms
+lighthouse>=0.1.0
+webpagetest>=0.1.0
+
+# Accessibility testing platforms
+axe>=0.1.0
+wave>=0.1.0
+
+# Usability testing platforms
+hotjar>=0.1.0
+fullstory>=0.1.0
+
+# A/B testing platforms
+optimizely>=0.1.0
+google-optimize>=0.1.0
+
+# Analytics platforms
+google-analytics>=0.1.0
+mixpanel>=0.1.0
+
+# Heatmap platforms
+hotjar>=0.1.0
+crazy-egg>=0.1.0
+
+# Session recording platforms
+fullstory>=0.1.0
+logrocket>=0.1.0
+
+# User feedback platforms
+uservoice>=0.1.0
+zendesk>=0.1.0
+
+# Survey platforms
+surveymonkey>=0.1.0
+typeform>=0.1.0
+
+# Form platforms
+jotform>=0.1.0
+wufoo>=0.1.0
+
+# Landing page platforms
+unbounce>=0.1.0
+leadpages>=0.1.0
+
+# Email marketing platforms
+mailchimp>=0.1.0
+constant-contact>=0.1.0
+
+# Social media platforms
+hootsuite>=0.1.0
+buffer>=0.1.0
+
+# Content management platforms
+wordpress>=0.1.0
+drupal>=0.1.0
+
+# E-commerce platforms
+shopify>=0.1.0
+woocommerce>=0.1.0
+
+# Payment processing platforms
+stripe>=0.1.0
+square>=0.1.0
+
+# Accounting platforms
+quickbooks>=0.1.0
+xero>=0.1.0
+
+# CRM platforms
+salesforce>=0.1.0
+hubspot>=0.1.0
+
+# ERP platforms
+sap>=0.1.0
+oracle>=0.1.0
+
+# HR platforms
+workday>=0.1.0
+bamboohr>=0.1.0
+
+# Payroll platforms
+adp>=0.1.0
+paychex>=0.1.0
+
+# Time tracking platforms
+toggl>=0.1.0
+harvest>=0.1.0
+
+# Project management platforms
+asana>=0.1.0
+monday>=0.1.0
+
+# Team collaboration platforms
+slack>=0.1.0
+microsoft-teams>=0.1.0
+
+# Document collaboration platforms
+google-docs>=0.1.0
+office365>=0.1.0
+
+# File collaboration platforms
+box>=0.1.0
+sharepoint>=0.1.0
+
+# Video collaboration platforms
+zoom>=0.1.0
+webex>=0.1.0
+
+# Design collaboration platforms
+figma>=0.1.0
+invision>=0.1.0
+
+# Code collaboration platforms
+github>=0.1.0
+bitbucket>=0.1.0
+
+# Knowledge management platforms
+confluence>=0.1.0
+notion>=0.1.0
+
+# Help desk platforms
+zendesk>=0.1.0
+freshdesk>=0.1.0
+
+# Live chat platforms
+intercom>=0.1.0
+drift>=0.1.0
+
+# Chatbot platforms
+chatfuel>=0.1.0
+manychat>=0.1.0
+
+# Voice assistant platforms
+alexa>=0.1.0
+google-assistant>=0.1.0
+
+# Smart home platforms
+smartthings>=0.1.0
+home-assistant>=0.1.0
+
+# IoT platforms
+aws-iot>=0.1.0
+azure-iot>=0.1.0
+
+# Edge computing platforms
+aws-greengrass>=0.1.0
+azure-iot-edge>=0.1.0
+
+# Blockchain platforms
+ethereum>=0.1.0
+hyperledger>=0.1.0
+
+# Cryptocurrency platforms
+coinbase>=0.1.0
+binance>=0.1.0
+
+# DeFi platforms
+uniswap>=0.1.0
+aave>=0.1.0
+
+# NFT platforms
+opensea>=0.1.0
+foundation>=0.1.0
+
+# Metaverse platforms
+decentraland>=0.1.0
+sandbox>=0.1.0
+
+# VR platforms
+oculus>=0.1.0
+steamvr>=0.1.0
+
+# AR platforms
+arcore>=0.1.0
+arkit>=0.1.0
+
+# Mixed reality platforms
+hololens>=0.1.0
+magic-leap>=0.1.0
+
+# 3D platforms
+blender>=0.1.0
+maya>=0.1.0
+
+# CAD platforms
+autocad>=0.1.0
+solidworks>=0.1.0
+
+# Simulation platforms
+ansys>=0.1.0
+comsol>=0.1.0
+
+# Rendering platforms
+v-ray>=0.1.0
+arnold>=0.1.0
+
+# Animation platforms
+after-effects>=0.1.0
+cinema4d>=0.1.0
+
+# Video editing platforms
+premiere>=0.1.0
+final-cut>=0.1.0
+
+# Audio editing platforms
+pro-tools>=0.1.0
+logic-pro>=0.1.0
+
+# Image editing platforms
+photoshop>=0.1.0
+gimp>=0.1.0
+
+# Vector graphics platforms
+illustrator>=0.1.0
+inkscape>=0.1.0
+
+# UI design platforms
+sketch>=0.1.0
+adobe-xd>=0.1.0
+
+# Prototyping platforms
+figma>=0.1.0
+principle>=0.1.0
+
+# Wireframing platforms
+balsamiq>=0.1.0
+mockplus>=0.1.0
+
+# User research platforms
+maze>=0.1.0
+usertesting>=0.1.0
+
+# Design system platforms
+storybook>=0.1.0
+zeroheight>=0.1.0
+
+# Icon platforms
+noun-project>=0.1.0
+flaticon>=0.1.0
+
+# Font platforms
+google-fonts>=0.1.0
+adobe-fonts>=0.1.0
+
+# Color platforms
+coolors>=0.1.0
+adobe-color>=0.1.0
+
+# Stock photo platforms
+shutterstock>=0.1.0
+unsplash>=0.1.0
+
+# Stock video platforms
+shutterstock>=0.1.0
+pond5>=0.1.0
+
+# Stock audio platforms
+audiojungle>=0.1.0
+freesound>=0.1.0
+
+# Stock graphics platforms
+creative-market>=0.1.0
+envato>=0.1.0
+
+# Template platforms
+themeforest>=0.1.0
+templatemonster>=0.1.0
+
+# Plugin platforms
+wordpress-plugins>=0.1.0
+chrome-extensions>=0.1.0
+
+# API platforms
+rapidapi>=0.1.0
+postman>=0.1.0
+
+# Webhook platforms
+zapier>=0.1.0
+ifttt>=0.1.0
+
+# Automation platforms
+microsoft-flow>=0.1.0
+integromat>=0.1.0
+
+# Workflow platforms
+github-actions>=0.1.0
+jenkins>=0.1.0
+
+# CI/CD platforms
+travis-ci>=0.1.0
+circleci>=0.1.0
+
+# Deployment platforms
+netlify>=0.1.0
+vercel>=0.1.0
+
+# Hosting platforms
+aws>=0.1.0
+digitalocean>=0.1.0
+
+# CDN platforms
+cloudflare>=0.1.0
+fastly>=0.1.0
+
+# DNS platforms
+cloudflare-dns>=0.1.0
+route53>=0.1.0
+
+# SSL platforms
+letsencrypt>=0.1.0
+cloudflare-ssl>=0.1.0
+
+# Domain platforms
+namecheap>=0.1.0
+godaddy>=0.1.0
+
+# Email hosting platforms
+google-workspace>=0.1.0
+office365>=0.1.0
+
+# Website builder platforms
+wix>=0.1.0
+squarespace>=0.1.0
+
+# Blog platforms
+wordpress>=0.1.0
+ghost>=0.1.0
+
+# Forum platforms
+discourse>=0.1.0
+vanilla>=0.1.0
+
+# Wiki platforms
+mediawiki>=0.1.0
+dokuwiki>=0.1.0
+
+# Documentation platforms
+gitbook>=0.1.0
+bookstack>=0.1.0
+
+# API documentation platforms
+swagger>=0.1.0
+postman>=0.1.0
+
+# Status page platforms
+statuspage>=0.1.0
+atlassian-statuspage>=0.1.0
+
+# Feedback platforms
+canny>=0.1.0
+productboard>=0.1.0
+
+# Feature flag platforms
+launchdarkly>=0.1.0
+split>=0.1.0
+
+# Experimentation platforms
+optimizely>=0.1.0
+vwo>=0.1.0
+
+# Personalization platforms
+dynamic-yield>=0.1.0
+monetate>=0.1.0
+
+# Recommendation platforms
+amazon-personalize>=0.1.0
+recombee>=0.1.0
+
+# Search platforms
+algolia>=0.1.0
+elasticsearch>=0.1.0
+
+# Chat platforms
+sendbird>=0.1.0
+pubnub>=0.1.0
+
+# Video platforms
+agora>=0.1.0
+twilio-video>=0.1.0
+
+# Voice platforms
+twilio-voice>=0.1.0
+vonage>=0.1.0
+
+# SMS platforms
+twilio-sms>=0.1.0
+messagebird>=0.1.0
+
+# Email platforms
+sendgrid>=0.1.0
+mailgun>=0.1.0
+
+# Push notification platforms
+onesignal>=0.1.0
+pusher>=0.1.0
+
+# In-app messaging platforms
+intercom>=0.1.0
+appcues>=0.1.0
+
+# Customer support platforms
+zendesk>=0.1.0
+freshworks>=0.1.0
+
+# Knowledge base platforms
+helpscout>=0.1.0
+guru>=0.1.0
+
+# Community platforms
+discourse>=0.1.0
+circle>=0.1.0
+
+# Event platforms
+segment>=0.1.0
+amplitude>=0.1.0
+
+# Product analytics platforms
+mixpanel>=0.1.0
+heap>=0.1.0
+
+# User analytics platforms
+fullstory>=0.1.0
+hotjar>=0.1.0
+
+# Marketing analytics platforms
+google-analytics>=0.1.0
+adobe-analytics>=0.1.0
+
+# Social analytics platforms
+sprout-social>=0.1.0
+brandwatch>=0.1.0
+
+# SEO platforms
+semrush>=0.1.0
+ahrefs>=0.1.0
+
+# Content marketing platforms
+contentful>=0.1.0
+hubspot>=0.1.0
+
+# Influencer marketing platforms
+grin>=0.1.0
+upfluence>=0.1.0
+
+# Affiliate marketing platforms
+impact>=0.1.0
+cj-affiliate>=0.1.0
+
+# Email marketing platforms
+klaviyo>=0.1.0
+mailchimp>=0.1.0
+
+# SMS marketing platforms
+attentive>=0.1.0
+postscript>=0.1.0
+
+# Social media marketing platforms
+hootsuite>=0.1.0
+sprout-social>=0.1.0
+
+# Paid advertising platforms
+google-ads>=0.1.0
+facebook-ads>=0.1.0
+
+# Display advertising platforms
+google-display>=0.1.0
+programmatic>=0.1.0
+
+# Video advertising platforms
+youtube-ads>=0.1.0
+connected-tv>=0.1.0
+
+# Audio advertising platforms
+spotify-ads>=0.1.0
+podcast-ads>=0.1.0
+
+# Native advertising platforms
+taboola>=0.1.0
+outbrain>=0.1.0
+
+# Retargeting platforms
+criteo>=0.1.0
+adroll>=0.1.0
+
+# Attribution platforms
+attribution>=0.1.0
+marketing-mix>=0.1.0
+
+# Customer data platforms
+segment>=0.1.0
+mparticle>=0.1.0
+
+# Data management platforms
+adobe-audience>=0.1.0
+salesforce-dmp>=0.1.0
+
+# Demand side platforms
+trade-desk>=0.1.0
+amazon-dsp>=0.1.0
+
+# Supply side platforms
+pubmatic>=0.1.0
+rubicon>=0.1.0
+
+# Ad exchanges
+google-adx>=0.1.0
+openx>=0.1.0
+
+# Ad networks
+google-adsense>=0.1.0
+media-net>=0.1.0
+
+# Ad servers
+google-ad-manager>=0.1.0
+sizmek>=0.1.0
+
+# Creative platforms
+flashtalking>=0.1.0
+celtra>=0.1.0
+
+# Video platforms
+brightcove>=0.1.0
+vimeo>=0.1.0
+
+# Live streaming platforms
+wowza>=0.1.0
+red5>=0.1.0
+
+# Webinar platforms
+zoom-webinar>=0.1.0
+gotowebinar>=0.1.0
+
+# Virtual event platforms
+hopin>=0.1.0
+6connex>=0.1.0
+
+# Conference platforms
+whova>=0.1.0
+eventmobi>=0.1.0
+
+# Trade show platforms
+freeman>=0.1.0
+ges>=0.1.0
+
+# Exhibition platforms
+expo-logic>=0.1.0
+a2z>=0.1.0
+
+# Venue platforms
+cvent-venues>=0.1.0
+social-tables>=0.1.0
+
+# Catering platforms
+catertrax>=0.1.0
+curate>=0.1.0
+
+# Entertainment platforms
+gigmasters>=0.1.0
+bash>=0.1.0
+
+# Photography platforms
+shootproof>=0.1.0
+pixieset>=0.1.0
+
+# Videography platforms
+vimeo-create>=0.1.0
+animoto>=0.1.0
+
+# Audio platforms
+soundstripe>=0.1.0
+epidemic-sound>=0.1.0
+
+# Lighting platforms
+chauvet>=0.1.0
+elation>=0.1.0
+
+# Sound platforms
+qsc>=0.1.0
+yamaha>=0.1.0
+
+# Stage platforms
+staging-concepts>=0.1.0
+all-access>=0.1.0
+
+# Rigging platforms
+tomcat>=0.1.0
+total-structures>=0.1.0
+
+# Projection platforms
+christie>=0.1.0
+barco>=0.1.0
+
+# LED platforms
+absen>=0.1.0
+leyard>=0.1.0
+
+# Broadcast platforms
+blackmagic>=0.1.0
+newtek>=0.1.0
+
+# Streaming platforms
+wirecast>=0.1.0
+vmix>=0.1.0
+
+# Recording platforms
+pro-tools>=0.1.0
+reaper>=0.1.0
+
+# Mixing platforms
+yamaha-mixing>=0.1.0
+allen-heath>=0.1.0
+
+# Mastering platforms
+izotope>=0.1.0
+waves>=0.1.0
+
+# Distribution platforms
+distrokid>=0.1.0
+tunecore>=0.1.0
+
+# Royalty platforms
+ascap>=0.1.0
+bmi>=0.1.0
+
+# Publishing platforms
+sony-music>=0.1.0
+universal>=0.1.0
+
+# Label platforms
+independent>=0.1.0
+major-label>=0.1.0
+
+# Artist platforms
+bandcamp>=0.1.0
+soundcloud>=0.1.0
+
+# Fan platforms
+patreon>=0.1.0
+onlyfans>=0.1.0
+
+# Merchandise platforms
+teespring>=0.1.0
+printful>=0.1.0
+
+# Ticketing platforms
+eventbrite>=0.1.0
+brown-paper>=0.1.0
+
+# Booking platforms
+bandsintown>=0.1.0
+songkick>=0.1.0
+
+# Tour platforms
+pollstar>=0.1.0
+bandsintown>=0.1.0
+
+# Venue platforms
+songkick>=0.1.0
+bandsintown>=0.1.0
+
+# Festival platforms
+festival-finder>=0.1.0
+fest300>=0.1.0
+
+# Radio platforms
+radio-com>=0.1.0
+iheartradio>=0.1.0
+
+# Podcast platforms
+anchor>=0.1.0
+buzzsprout>=0.1.0
+
+# Audiobook platforms
+acx>=0.1.0
+findaway>=0.1.0
+
+# Voice acting platforms
+voice123>=0.1.0
+voices>=0.1.0
+
+# Translation platforms
+rev>=0.1.0
+gengo>=0.1.0
+
+# Transcription platforms
+otter>=0.1.0
+trint>=0.1.0
+
+# Subtitling platforms
+rev>=0.1.0
+3play>=0.1.0
+
+# Dubbing platforms
+voices>=0.1.0
+voice123>=0.1.0
+
+# Localization platforms
+lokalise>=0.1.0
+phrase>=0.1.0
+
+# Globalization platforms
+lingoport>=0.1.0
+globalization>=0.1.0
+
+# Cultural platforms
+hofstede>=0.1.0
+cultural-detective>=0.1.0
+
+# Language platforms
+rosetta-stone>=0.1.0
+babbel>=0.1.0
+
+# Communication platforms
+grammarly>=0.1.0
+hemingway>=0.1.0
+
+# Writing platforms
+scrivener>=0.1.0
+ulysses>=0.1.0
+
+# Editing platforms
+grammarly>=0.1.0
+prowritingaid>=0.1.0
+
+# Proofreading platforms
+grammarly>=0.1.0
+whitesmoke>=0.1.0
+
+# Publishing platforms
+kindle-direct>=0.1.0
+lulu>=0.1.0
+
+# Distribution platforms
+ingram-spark>=0.1.0
+kdp>=0.1.0
+
+# Marketing platforms
+bookbub>=0.1.0
+netgalley>=0.1.0
+
+# Review platforms
+goodreads>=0.1.0
+bookbub>=0.1.0
+
+# Reading platforms
+kindle>=0.1.0
+apple-books>=0.1.0
+
+# Library platforms
+overdrive>=0.1.0
+hoopla>=0.1.0
+
+# Academic platforms
+jstor>=0.1.0
+project-muse>=0.1.0
+
+# Research platforms
+researchgate>=0.1.0
+academia>=0.1.0
+
+# Citation platforms
+zotero>=0.1.0
+mendeley>=0.1.0
+
+# Reference platforms
+refworks>=0.1.0
+endnote>=0.1.0
+
+# Plagiarism platforms
+turnitin>=0.1.0
+grammarly>=0.1.0
+
+# Peer review platforms
+publons>=0.1.0
+f1000>=0.1.0
+
+# Journal platforms
+elsevier>=0.1.0
+springer>=0.1.0
+
+# Conference platforms
+ieee>=0.1.0
+acm>=0.1.0
+
+# Preprint platforms
+arxiv>=0.1.0
+biorxiv>=0.1.0
+
+# Data platforms
+figshare>=0.1.0
+dryad>=0.1.0
+
+# Code platforms
+github>=0.1.0
+zenodo>=0.1.0
+
+# Reproducibility platforms
+protocols>=0.1.0
+reprozip>=0.1.0
+
+# Collaboration platforms
+overleaf>=0.1.0
+authorea>=0.1.0
+
+# Grant platforms
+grants-gov>=0.1.0
+nsf>=0.1.0
+
+# Funding platforms
+kickstarter>=0.1.0
+indiegogo>=0.1.0
+
+# Investment platforms
+angellist>=0.1.0
+seedinvest>=0.1.0
+
+# Venture platforms
+crunchbase>=0.1.0
+pitchbook>=0.1.0
+
+# Startup platforms
+ycombinator>=0.1.0
+techstars>=0.1.0
+
+# Accelerator platforms
+500-startups>=0.1.0
+plug-and-play>=0.1.0
+
+# Incubator platforms
+rocket-internet>=0.1.0
+betaworks>=0.1.0
+
+# Innovation platforms
+innocentive>=0.1.0
+ninesigma>=0.1.0
+
+# Patent platforms
+uspto>=0.1.0
+google-patents>=0.1.0
+
+# Trademark platforms
+uspto-trademarks>=0.1.0
+trademark>=0.1.0
+
+# Copyright platforms
+copyright-gov>=0.1.0
+creative-commons>=0.1.0
+
+# Legal platforms
+legalzoom>=0.1.0
+rocket-lawyer>=0.1.0
+
+# Contract platforms
+docusign>=0.1.0
+hellosign>=0.1.0
+
+# Compliance platforms
+compliance>=0.1.0
+regulatory>=0.1.0
+
+# Risk platforms
+risk-management>=0.1.0
+governance>=0.1.0
+
+# Insurance platforms
+lemonade>=0.1.0
+next>=0.1.0
+
+# Claims platforms
+claims>=0.1.0
+adjuster>=0.1.0
+
+# Underwriting platforms
+underwriting>=0.1.0
+actuarial>=0.1.0
+
+# Reinsurance platforms
+reinsurance>=0.1.0
+catastrophe>=0.1.0
+
+# Brokerage platforms
+brokerage>=0.1.0
+wholesale>=0.1.0
+
+# Agency platforms
+agency>=0.1.0
+retail>=0.1.0
+
+# Distribution platforms
+distribution>=0.1.0
+channel>=0.1.0
+
+# Sales platforms
+salesforce>=0.1.0
+pipedrive>=0.1.0
+
+# Lead platforms
+leadfeeder>=0.1.0
+zoominfo>=0.1.0
+
+# Prospecting platforms
+outreach>=0.1.0
+salesloft>=0.1.0
+
+# Qualification platforms
+qualification>=0.1.0
+discovery>=0.1.0
+
+# Proposal platforms
+proposify>=0.1.0
+pandadoc>=0.1.0
+
+# Negotiation platforms
+negotiation>=0.1.0
+closing>=0.1.0
+
+# Onboarding platforms
+onboarding>=0.1.0
+customer-success>=0.1.0
+
+# Retention platforms
+retention>=0.1.0
+churn>=0.1.0
+
+# Expansion platforms
+expansion>=0.1.0
+upsell>=0.1.0
+
+# Renewal platforms
+renewal>=0.1.0
+subscription>=0.1.0
+
+# Loyalty platforms
+loyalty>=0.1.0
+rewards>=0.1.0
+
+# Referral platforms
+referral>=0.1.0
+advocacy>=0.1.0
+
+# Review platforms
+review>=0.1.0
+reputation>=0.1.0
+
+# Feedback platforms
+feedback>=0.1.0
+survey>=0.1.0
+
+# Support platforms
+support>=0.1.0
+helpdesk>=0.1.0
+
+# Training platforms
+training>=0.1.0
+enablement>=0.1.0
+
+# Coaching platforms
+coaching>=0.1.0
+mentoring>=0.1.0
+
+# Performance platforms
+performance>=0.1.0
+quota>=0.1.0
+
+# Compensation platforms
+compensation>=0.1.0
+commission>=0.1.0
+
+# Territory platforms
+territory>=0.1.0
+routing>=0.1.0
+
+# Forecasting platforms
+forecasting>=0.1.0
+pipeline>=0.1.0
+
+# Reporting platforms
+reporting>=0.1.0
+dashboard>=0.1.0
+
+# Analytics platforms
+analytics>=0.1.0
+intelligence>=0.1.0
+
+# Optimization platforms
+optimization>=0.1.0
+efficiency>=0.1.0
+
+# Automation platforms
+automation>=0.1.0
+workflow>=0.1.0
+
+# Integration platforms
+integration>=0.1.0
+middleware>=0.1.0
+
+# API platforms
+api>=0.1.0
+webhook>=0.1.0
+
+# Data platforms
+data>=0.1.0
+warehouse>=0.1.0
+
+# ETL platforms
+etl>=0.1.0
+pipeline>=0.1.0
+
+# Streaming platforms
+streaming>=0.1.0
+realtime>=0.1.0
+
+# Batch platforms
+batch>=0.1.0
+scheduled>=0.1.0
+
+# Processing platforms
+processing>=0.1.0
+compute>=0.1.0
+
+# Storage platforms
+storage>=0.1.0
+database>=0.1.0
+
+# Backup platforms
+backup>=0.1.0
+recovery>=0.1.0
+
+# Archive platforms
+archive>=0.1.0
+retention>=0.1.0
+
+# Compliance platforms
+compliance>=0.1.0
+governance>=0.1.0
+
+# Security platforms
+security>=0.1.0
+encryption>=0.1.0
+
+# Privacy platforms
+privacy>=0.1.0
+anonymization>=0.1.0
+
+# Consent platforms
+consent>=0.1.0
+preference>=0.1.0
+
+# Identity platforms
+identity>=0.1.0
+authentication>=0.1.0
+
+# Access platforms
+access>=0.1.0
+authorization>=0.1.0
+
+# Privilege platforms
+privilege>=0.1.0
+elevation>=0.1.0
+
+# Session platforms
+session>=0.1.0
+management>=0.1.0
+
+# Federation platforms
+federation>=0.1.0
+sso>=0.1.0
+
+# Directory platforms
+directory>=0.1.0
+ldap>=0.1.0
+
+# Provisioning platforms
+provisioning>=0.1.0
+lifecycle>=0.1.0
+
+# Governance platforms
+governance>=0.1.0
+policy>=0.1.0
+
+# Audit platforms
+audit>=0.1.0
+logging>=0.1.0
+
+# Monitoring platforms
+monitoring>=0.1.0
+alerting>=0.1.0
+
+# Incident platforms
+incident>=0.1.0
+response>=0.1.0
+
+# Forensics platforms
+forensics>=0.1.0
+investigation>=0.1.0
+
+# Threat platforms
+threat>=0.1.0
+intelligence>=0.1.0
+
+# Vulnerability platforms
+vulnerability>=0.1.0
+scanning>=0.1.0
+
+# Penetration platforms
+penetration>=0.1.0
+testing>=0.1.0
+
+# Red team platforms
+red-team>=0.1.0
+adversary>=0.1.0
+
+# Blue team platforms
+blue-team>=0.1.0
+defense>=0.1.0
+
+# Purple team platforms
+purple-team>=0.1.0
+collaboration>=0.1.0
+
+# SOC platforms
+soc>=0.1.0
+operations>=0.1.0
+
+# SIEM platforms
+siem>=0.1.0
+correlation>=0.1.0
+
+# SOAR platforms
+soar>=0.1.0
+orchestration>=0.1.0
+
+# XDR platforms
+xdr>=0.1.0
+detection>=0.1.0
+
+# EDR platforms
+edr>=0.1.0
+endpoint>=0.1.0
+
+# NDR platforms
+ndr>=0.1.0
+network>=0.1.0
+
+# UEBA platforms
+ueba>=0.1.0
+behavior>=0.1.0
+
+# CASB platforms
+casb>=0.1.0
+cloud>=0.1.0
+
+# ZTNA platforms
+ztna>=0.1.0
+zero-trust>=0.1.0
+
+# SASE platforms
+sase>=0.1.0
+edge>=0.1.0
+
+# SD-WAN platforms
+sd-wan>=0.1.0
+networking>=0.1.0
+
+# CDN platforms
+cdn>=0.1.0
+delivery>=0.1.0
+
+# WAF platforms
+waf>=0.1.0
+firewall>=0.1.0
+
+# DDoS platforms
+ddos>=0.1.0
+protection>=0.1.0
+
+# Bot platforms
+bot>=0.1.0
+mitigation>=0.1.0
+
+# API platforms
+api>=0.1.0
+gateway>=0.1.0
+
+# Load platforms
+load>=0.1.0
+balancer>=0.1.0
+
+# Proxy platforms
+proxy>=0.1.0
+reverse>=0.1.0
+
+# VPN platforms
+vpn>=0.1.0
+tunnel>=0.1.0
+
+# DNS platforms
+dns>=0.1.0
+resolution>=0.1.0
+
+# Certificate platforms
+certificate>=0.1.0
+management>=0.1.0
+
+# PKI platforms
+pki>=0.1.0
+infrastructure>=0.1.0
+
+# HSM platforms
+hsm>=0.1.0
+hardware>=0.1.0
+
+# KMS platforms
+kms>=0.1.0
+key>=0.1.0
+
+# Secrets platforms
+secrets>=0.1.0
+vault>=0.1.0
+
+# Configuration platforms
+configuration>=0.1.0
+management>=0.1.0
+
+# Deployment platforms
+deployment>=0.1.0
+release>=0.1.0
+
+# Orchestration platforms
+orchestration>=0.1.0
+automation>=0.1.0
+
+# Container platforms
+container>=0.1.0
+runtime>=0.1.0
+
+# Kubernetes platforms
+kubernetes>=0.1.0
+cluster>=0.1.0
+
+# Serverless platforms
+serverless>=0.1.0
+functions>=0.1.0
+
+# Edge platforms
+edge>=0.1.0
+computing>=0.1.0
+
+# IoT platforms
+iot>=0.1.0
+devices>=0.1.0
+
+# Embedded platforms
+embedded>=0.1.0
+firmware>=0.1.0
+
+# RTOS platforms
+rtos>=0.1.0
+realtime>=0.1.0
+
+# Microcontroller platforms
+microcontroller>=0.1.0
+mcu>=0.1.0
+
+# FPGA platforms
+fpga>=0.1.0
+programmable>=0.1.0
+
+# ASIC platforms
+asic>=0.1.0
+custom>=0.1.0
+
+# GPU platforms
+gpu>=0.1.0
+graphics>=0.1.0
+
+# TPU platforms
+tpu>=0.1.0
+tensor>=0.1.0
+
+# NPU platforms
+npu>=0.1.0
+neural>=0.1.0
+
+# Quantum platforms
+quantum>=0.1.0
+computing>=0.1.0
+
+# Neuromorphic platforms
+neuromorphic>=0.1.0
+brain>=0.1.0
+
+# Optical platforms
+optical>=0.1.0
+photonic>=0.1.0
+
+# Biological platforms
+biological>=0.1.0
+dna>=0.1.0
+
+# Molecular platforms
+molecular>=0.1.0
+chemistry>=0.1.0
+
+# Atomic platforms
+atomic>=0.1.0
+physics>=0.1.0
+
+# Nano platforms
+nano>=0.1.0
+scale>=0.1.0
+
+# Micro platforms
+micro>=0.1.0
+mems>=0.1.0
+
+# Macro platforms
+macro>=0.1.0
+systems>=0.1.0
+
+# Mega platforms
+mega>=0.1.0
+infrastructure>=0.1.0
+
+# Giga platforms
+giga>=0.1.0
+scale>=0.1.0
+
+# Tera platforms
+tera>=0.1.0
+computing>=0.1.0
+
+# Peta platforms
+peta>=0.1.0
+data>=0.1.0
+
+# Exa platforms
+exa>=0.1.0
+storage>=0.1.0
+
+# Zetta platforms
+zetta>=0.1.0
+archive>=0.1.0
+
+# Yotta platforms
+yotta>=0.1.0
+universe>=0.1.0
+

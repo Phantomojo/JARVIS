@@ -1,0 +1,16 @@
+2025-06-10 07:45:40.060 [info] [2025-06-10 11:45:39.748] [          5ms] [/home/ubuntu] git rev-parse --show-toplevel • FAILED
+2025-06-10 07:45:40.060 [info] 
+Error: fatal: not a git repository (or any of the parent directories): .git
+
+2025-06-10 07:46:33.611 [info] [2025-06-10 11:46:33.611] [          5ms] [/home/ubuntu/.nvm] git rev-parse --abbrev-ref --symbolic-full-name @ @{u} -- • FAILED
+2025-06-10 07:46:33.611 [info] 
+Error: fatal: HEAD does not point to a branch
+
+2025-06-10 07:46:44.129 [info] [2025-06-10 11:46:44.129] [          6ms] [/home/ubuntu/.nvm] git push --set-upstream origin (179d450...) • FAILED
+2025-06-10 07:46:44.129 [info] 
+Error: fatal: invalid refspec '(179d450...)'
+
+2025-06-10 07:53:38.257 [info] [2025-06-10 11:53:38.257] [*      2005ms] [/home/ubuntu] git shortlog -s --all --no-min-parents --since=1.year.ago (slow) • FAILED
+2025-06-10 07:53:38.258 [info] 
+Canceled: Operation cancelled; command=/usr/bin/git -c core.quotepath=false -c color.ui=false shortlog -s --all --no-min-parents --since=1.year.ago
+

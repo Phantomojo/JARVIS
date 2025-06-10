@@ -1,0 +1,15 @@
+# Core dependencies
+requests>=2.28.0
+tkinter>=8.6.0
+
+# Optional dependencies for keyboard simulation
+pyautogui>=0.9.53
+
+# For testing and development
+pytest>=7.0.0
+black>=22.3.0
+
+# For documentation
+sphinx>=4.5.0
+sphinx-rtd-theme>=1.0.0
+

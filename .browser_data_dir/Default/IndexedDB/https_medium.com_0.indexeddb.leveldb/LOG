@@ -1,0 +1,6 @@
+2025/06/07-16:54:16.922 267 Creating DB /home/ubuntu/.browser_data_dir/Default/IndexedDB/https_medium.com_0.indexeddb.leveldb since it was missing.
+2025/06/07-16:54:16.923 267 Reusing MANIFEST /home/ubuntu/.browser_data_dir/Default/IndexedDB/https_medium.com_0.indexeddb.leveldb/MANIFEST-000001
+2025/06/08-22:03:47.241 226f Level-0 table #5: started
+2025/06/08-22:03:47.242 226f Level-0 table #5: 7654 bytes OK
+2025/06/08-22:03:47.242 226f Delete type=0 #3
+2025/06/08-22:03:47.242 226f Manual compaction at level-0 from (begin) .. (end); will stop at (end)
